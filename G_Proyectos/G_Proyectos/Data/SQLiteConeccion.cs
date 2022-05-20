@@ -13,6 +13,10 @@ namespace G_Proyectos.Data
         {
             db = new SQLiteAsyncConnection(dbpath);
             db.CreateTableAsync<Usuario>().Wait();
+            db.CreateTableAsync<Paciente>().Wait();
+            db.CreateTableAsync<Monitoreo>().Wait();
+            db.CreateTableAsync<Medico>().Wait();
+
         }
     }
 }
