@@ -5,9 +5,9 @@ using SQLite;
 
 namespace G_Proyectos.SQLite
 {
-    internal class Paciente
+    public class Paciente
     {
-        [PrimaryKey]
+        [PrimaryKey,AutoIncrement]
         public int Id { get; set; }
 
         public string Nombre { get; set; }

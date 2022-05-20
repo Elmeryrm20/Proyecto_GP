@@ -4,9 +4,9 @@ using System.Text;
 using SQLite;
 namespace G_Proyectos.SQLite
 {
-    internal class Monitoreo
+    public class Monitoreo
     {
-        [PrimaryKey]
+        [PrimaryKey,AutoIncrement]
         public int Id { get; set; }
         public int Precion { get; set; }
         public DateTime fec_registro { get; set; }

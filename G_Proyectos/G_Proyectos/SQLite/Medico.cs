@@ -5,9 +5,9 @@ using SQLite;
 
 namespace G_Proyectos.SQLite
 {
-    internal class Medico
+    public class Medico
     {
-        [PrimaryKey]
+        [PrimaryKey,AutoIncrement]
         public int Id { get; set; }
 
         [MaxLength(9)]

@@ -8,7 +8,7 @@ namespace G_Proyectos.SQLite
     public class Usuario
     {
         [PrimaryKey]
-        public int CorreoU { get; set; }
+        public string CorreoU { get; set; }
 
         [MaxLength(50)]
         public string NombreU { get; set; }

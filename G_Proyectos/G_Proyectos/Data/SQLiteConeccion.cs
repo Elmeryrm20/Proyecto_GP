@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using SQLite;
 using G_Proyectos.SQLite;
+using System.Threading.Tasks;
 
 namespace G_Proyectos.Data
 {
@@ -17,6 +18,22 @@ namespace G_Proyectos.Data
             db.CreateTableAsync<Monitoreo>().Wait();
             db.CreateTableAsync<Medico>().Wait();
 
+        }
+        public Task<int> InsertarUsuario(Usuario user)
+        {
+                return db.InsertAsync(user);
+        }
+        public Task<int> InsertarPaciente(Paciente pacient)
+        {
+            if (pacient.Id==0)
+            {
+                return db.InsertAsync(pacient);
+            }
+            else
+            {
+                return null;
+            }
+           
         }
     }
 }
