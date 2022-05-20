@@ -3,10 +3,26 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="G_Proyectos.Views.Principal">
     <ContentPage.Content>
+        
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Label Text="Principal"/>
+
+            <Grid VerticalOptions="CenterAndExpand">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Button x:Name="btniniciar"
+                    Text="INCIAR SESIÓN" Grid.Row="0"
+                        HorizontalOptions="Center"/>
+                <Button x:Name="btnregistrar" 
+                        Text="REGISTRATE AQUÍ" Grid.Row="2"
+                        HorizontalOptions="Center"/>
+                <Label Text="Aplicación diseñada pensando en las personas con diabetes que necesitan llevar un registro y control diario realizado por un glucómetro" Grid.Row="3"
+                       VerticalOptions="Center"
+                       HorizontalOptions="Center" />
+            </Grid>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
