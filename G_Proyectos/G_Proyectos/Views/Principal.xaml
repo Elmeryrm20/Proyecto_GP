@@ -15,10 +15,10 @@
                 </Grid.RowDefinitions>
                 <Button x:Name="btniniciar"
                     Text="INCIAR SESIÓN" Grid.Row="0"
-                        HorizontalOptions="Center"/>
+                        HorizontalOptions="Center" Clicked="Btniniciar_Clicked"/>
                 <Button x:Name="btnregistrar" 
                         Text="REGISTRATE AQUÍ" Grid.Row="2"
-                        HorizontalOptions="Center"/>
+                        HorizontalOptions="Center" Clicked="Btnregistrar_Clicked"/>
                 <Label Text="Aplicación diseñada pensando en las personas con diabetes que necesitan llevar un registro y control diario realizado por un glucómetro" Grid.Row="3"
                        VerticalOptions="Center"
                        HorizontalOptions="Center" />

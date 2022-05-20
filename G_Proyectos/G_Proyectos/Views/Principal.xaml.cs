@@ -19,14 +19,14 @@ namespace G_Proyectos.Views
             btnregistrar.Clicked += Btnregistrar_Clicked;
         }
 
-        private void Btnregistrar_Clicked(object sender, EventArgs e)
+        private async void Btnregistrar_Clicked(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new CrearCuenta());
+            await Navigation.PushAsync(new MainPage());
         }
 
-        private void Btniniciar_Clicked(object sender, EventArgs e)
+        private async void Btniniciar_Clicked(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new IniciarSesion());
+            await Navigation.PushAsync(new MainPage());
         }
     }
 }
