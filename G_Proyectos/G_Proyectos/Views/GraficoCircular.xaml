@@ -2,10 +2,55 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:Microcharts="clr-namespace:Microcharts.Forms;assembly=Microcharts.Forms"
+             xmlns:chart="clr-namespace:Syncfusion.SfChart.XForms;assembly=Syncfusion.SfChart.XForms"
              x:Class="G_Proyectos.Views.GraficoCircular">
     <ContentPage.Content>
-        <StackLayout>
-            <Microcharts:ChartView x:Name="Grafico_Torta" HeightRequest="300" />
+        <StackLayout Background="white">
+
+            <StackLayout Orientation="Horizontal">
+                
+                <Frame Grid.Column="0" VerticalOptions="Center">
+                    <Label Text="Hipoglucosa Severa"  />
+                </Frame>
+            
+            
+                <Frame Grid.Column="1" VerticalOptions="StartAndExpand">
+
+                    <chart:SfChart WidthRequest="130" >
+                        <chart:SfChart.Series>
+                            <chart:PieSeries EnableAnimation="True" ItemsSource="{Binding Data}" XBindingPath="Name" YBindingPath="Quantity" EnableTooltip="True"> <!--ItemsSources para colocar los datos a mostrar en el gráfico-->
+                                <chart:PieSeries.DataMarker>
+                                    <chart:ChartDataMarker LabelContent="Percentage">
+                                        <chart:ChartDataMarker.LabelStyle>
+                                            <chart:DataMarkerLabelStyle Font="Bold,7" LabelPosition="Auto" />
+                                        </chart:ChartDataMarker.LabelStyle>
+                                    </chart:ChartDataMarker>
+                                </chart:PieSeries.DataMarker>
+
+                                <chart:PieSeries.ColorModel>
+                                    <chart:ChartColorModel Palette="Custom">
+                                        <chart:ChartColorModel.CustomBrushes>
+                                            <Color>#868711</Color>
+                                            <Color>#bf2b20</Color>
+                                            <Color>#757372</Color>
+                                        </chart:ChartColorModel.CustomBrushes>
+                                    </chart:ChartColorModel>
+                                </chart:PieSeries.ColorModel>
+                            </chart:PieSeries>
+                        </chart:SfChart.Series>
+                    </chart:SfChart>
+
+                </Frame>
+
+                <Frame Grid.Column="2">
+                    <Label Text="Hipoglucosa Elevada"  />
+                </Frame>
+            </StackLayout>
+            
+            
         </StackLayout>
+
+        
+        
     </ContentPage.Content>
 </ContentPage>
