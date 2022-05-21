@@ -3,8 +3,25 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="G_Proyectos.Views.IniciarSesion">
     <ContentPage.Content>
-        <StackLayout>
-            <Grid VerticalOptions="CenterAndExpand">
+
+        <ScrollView>
+
+            <Grid>
+                <Grid RowSpacing="0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    
+                </Grid>
+            </Grid>
+        </ScrollView>
+
+        <!--<Grid VerticalOptions="CenterAndExpand">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="Auto"/>
                     <RowDefinition Height="Auto"/>
@@ -28,7 +45,6 @@
                 <Button Text="INICIAR SESION" 
                         Clicked="Btniniciarsesion_Clicked"
                         Grid.Row="3" />
-            </Grid>
-        </StackLayout>
+            </Grid>-->
     </ContentPage.Content>
 </ContentPage>
