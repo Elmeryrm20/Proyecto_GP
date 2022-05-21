@@ -3,10 +3,41 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="G_Proyectos.Views.CrearCuenta">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="CREAR CUENTA"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+        <Grid VerticalOptions="CenterAndExpand">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Label Text="Crea tu cuenta de Diabetes" 
+                       HorizontalOptions="Center"
+                       TextColor="Black"
+                       Grid.Row="0"/>
+            <Entry x:Name="correoelectronico" 
+                       Placeholder="Correo eléctronico"
+                       Keyboard="Default" 
+                       TextColor="#1187B0"
+                       Grid.Row="1"/>
+            <Entry x:Name="userentry" 
+                       Placeholder="Usuario"
+                       Keyboard="Default" 
+                       TextColor="#1187B0"
+                       Grid.Row="2"/>
+            <Entry x:Name="passwordentry" 
+                       Placeholder="Contraseña"
+                       IsPassword="True" 
+                       Keyboard="Default" 
+                       TextColor="#1187B0"
+                       Grid.Row="3"/>
+            <Entry x:Name="passworrepetdentry" 
+                       Placeholder="Confirmar Contraseña"
+                       IsPassword="True" 
+                       Keyboard="Default" 
+                       TextColor="#1187B0"
+                       Grid.Row="4"/>
+            <Button Text="CREAR CUENTA" 
+                        Clicked="Btncrearcuenta_Clicked"
+                        Grid.Row="5" />
+        </Grid>
     </ContentPage.Content>
 </ContentPage>

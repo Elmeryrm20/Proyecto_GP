@@ -16,5 +16,9 @@ namespace G_Proyectos.Views
         {
             InitializeComponent();
         }
+        private void Btniniciarsesion_Clicked(object sender, EventArgs e)
+        {
+
+        }
     }
 }

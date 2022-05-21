@@ -20,12 +20,12 @@ namespace G_Proyectos.Views
 
         private async void Btnregistrar_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new MainPage());
+            await Navigation.PushAsync(new CrearCuenta());
         }
 
         private async void Btniniciar_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new MainPage());
+            await Navigation.PushAsync(new IniciarSesion());
         }
     }
 }
