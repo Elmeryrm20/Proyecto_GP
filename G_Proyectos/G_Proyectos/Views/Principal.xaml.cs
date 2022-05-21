@@ -15,8 +15,7 @@ namespace G_Proyectos.Views
         public Principal()
         {
             InitializeComponent();
-            btniniciar.Clicked += Btniniciar_Clicked;
-            btnregistrar.Clicked += Btnregistrar_Clicked;
+           
         }
 
         private async void Btnregistrar_Clicked(object sender, EventArgs e)
