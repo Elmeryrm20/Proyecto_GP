@@ -4,9 +4,31 @@
              x:Class="G_Proyectos.Views.IniciarSesion">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="INICIAR SESION"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Grid VerticalOptions="CenterAndExpand">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Label Text="INICIAR SESION" 
+                       HorizontalOptions="Center"
+                       TextColor="Black"
+                       Grid.Row="0"/>
+                <Entry x:Name="userentry" 
+                       Keyboard="Default" 
+                       Placeholder="Correo eléctronico"
+                       TextColor="#1187B0"
+                       Grid.Row="1"/>
+                <Entry x:Name="passwordentry" 
+                       IsPassword="True" 
+                       Keyboard="Default" 
+                       TextColor="#1187B0"
+                       Placeholder="Contraseña"
+                       Grid.Row="2"/>
+                <Button Text="INICIAR SESION" 
+                        Clicked="Btniniciarsesion_Clicked"
+                        Grid.Row="3" />
+            </Grid>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

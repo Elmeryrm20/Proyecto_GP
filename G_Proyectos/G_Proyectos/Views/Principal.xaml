@@ -3,26 +3,56 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="G_Proyectos.Views.Principal">
     <ContentPage.Content>
-        
-        <StackLayout>
-            <Label Text="Principal"/>
 
-            <Grid VerticalOptions="CenterAndExpand">
-                <Grid.RowDefinitions>
+        <ScrollView>
+
+            <Grid>
+                <Grid RowSpacing="0">
+                    <Grid.RowDefinitions>
                     <RowDefinition Height="Auto"/>
                     <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="*"/>
                     <RowDefinition Height="Auto"/>
-                </Grid.RowDefinitions>
-                <Button x:Name="btniniciar"
-                    Text="INCIAR SESIÓN" Grid.Row="0"
-                        HorizontalOptions="Center" Clicked="Btniniciar_Clicked"/>
+                    </Grid.RowDefinitions>
+                    <!--espacio-->
+                    <BoxView BackgroundColor="Yellow" Grid.Row="0"/>
+                    
+                    <!--espacio-->
+                    <BoxView BackgroundColor="Blue" Grid.Row="1"
+                             HeightRequest="100"/>
+                    <!--botoniniciarsesion-->
+                    <BoxView BackgroundColor="SkyBlue" Grid.Row="2"/>
+                    <!--botonregistrar-->
+                    <BoxView BackgroundColor="DarkGreen" Grid.Row="3"/>
+                    
+                    <!--label-->
+                    <BoxView BackgroundColor="Yellow" Grid.Row="4"/>
+                    <!--imagen-->
+                    <BoxView BackgroundColor="Azure" Grid.Row="0"
+                             VerticalOptions="End" HorizontalOptions="Center"
+                             HeightRequest="100"
+                             WidthRequest="100"
+                             TranslationY="50"/>
+
+                    <!--<Button x:Name="btniniciar"
+                        Text="INCIAR SESIÓN" Grid.Row="0"
+                        HorizontalOptions="Center" 
+                        Clicked="Btniniciar_Clicked"
+                        WidthRequest="160"/>
                 <Button x:Name="btnregistrar" 
-                        Text="REGISTRATE AQUÍ" Grid.Row="2"
-                        HorizontalOptions="Center" Clicked="Btnregistrar_Clicked"/>
-                <Label Text="Aplicación diseñada pensando en las personas con diabetes que necesitan llevar un registro y control diario realizado por un glucómetro" Grid.Row="3"
-                       VerticalOptions="Center"
+                        Text="REGISTRATE AQUÍ" Grid.Row="1"
+                        HorizontalOptions="Center" 
+                        WidthRequest="160"
+                        Clicked="Btnregistrar_Clicked"/>
+                <Label Text="Aplicación diseñada pensando en las personas con " Grid.Row="2"
                        HorizontalOptions="Center" />
+                <Label Text="diabetes que necesitan llevar un registro y control diario" Grid.Row="3" 
+                       HorizontalOptions="Center" />
+                <Label Text="realizado por un glucómetro" Grid.Row="4" 
+                       HorizontalOptions="Center" />-->
+                </Grid>
             </Grid>
-        </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>
