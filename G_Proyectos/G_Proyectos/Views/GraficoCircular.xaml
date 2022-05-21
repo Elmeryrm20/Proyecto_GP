@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:Microcharts="clr-namespace:Microcharts.Forms;assembly=Microcharts.Forms"
+             x:Class="G_Proyectos.Views.GraficoCircular">
+    <ContentPage.Content>
+        <StackLayout>
+            <Microcharts:ChartView x:Name="Grafico_Torta" HeightRequest="300" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
