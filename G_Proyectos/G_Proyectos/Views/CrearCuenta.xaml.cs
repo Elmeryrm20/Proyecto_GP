@@ -21,5 +21,12 @@ namespace G_Proyectos.Views
         {
            
         }
+        public bool validacion()
+        {
+            bool restuesta = true;
+
+            return restuesta;
+            
+        }
     }
 }

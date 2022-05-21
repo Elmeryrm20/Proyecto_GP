@@ -35,7 +35,7 @@
                        Keyboard="Default" 
                        TextColor="#1187B0"
                        Grid.Row="4"/>
-            <Button Text="CREAR CUENTA" 
+            <Button Text="CREAR CUENTA" x:Name="boton"
                         Clicked="Btncrearcuenta_Clicked"
                         Grid.Row="5" />
         </Grid>
