@@ -52,8 +52,16 @@
                             <Grid ColumnDefinitions="*"/>
                             <Grid ColumnDefinitions="*"/>
                         </Grid>
-                        <StackLayout Grid.Row="6" Grid.Column="1" >
-                            <Label Text="¿Olvidó su contraseña?" Grid.Column="3"/>
+                        <StackLayout Grid.Row="6" Grid.Column="0" >
+                            <Button Text="¿Olvidó su contraseña?" Grid.Column="0"
+                            TextColor="#F4F4F4"
+                            BackgroundColor="#169FCF"
+                            BorderColor="#F4F4F4"
+                            BorderWidth="2"
+                            CornerRadius="25"
+                            WidthRequest="150"
+                            HeightRequest="50"
+                        Margin="80,0" />
                         </StackLayout>
                 </Grid>
             </Grid>
