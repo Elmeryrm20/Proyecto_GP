@@ -35,8 +35,16 @@
                        Keyboard="Default" 
                        TextColor="#1187B0"
                        Grid.Row="4"/>
-            <Button Text="CREAR CUENTA" x:Name="boton"
+            <Button Text="CREAR CUENTA" x:Name="btncrearcuenta"
                         Clicked="Btncrearcuenta_Clicked"
+                        TextColor="#F4F4F4"
+                        BackgroundColor="#169FCF"
+                        BorderColor="#F4F4F4"
+                        BorderWidth="2"
+                        CornerRadius="25"
+                        WidthRequest="150"
+                        HeightRequest="50"
+                        Margin="80,0" 
                         Grid.Row="5" />
         </Grid>
     </ContentPage.Content>
