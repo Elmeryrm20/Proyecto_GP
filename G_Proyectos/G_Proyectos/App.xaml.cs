@@ -14,7 +14,7 @@ namespace G_Proyectos
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new Views.ULTIMA()) ;
+            MainPage = new NavigationPage(new Views.GraficoCircular()) ;
         }
         public static SQLiteConeccion SQLiteDB
         {
