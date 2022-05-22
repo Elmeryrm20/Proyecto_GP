@@ -1,26 +1,65 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="G_Proyectos.Views.Page1">
+             x:Class="G_Proyectos.Views.ULTIMA">
     <ContentPage.Content>
-        <StackLayout BackgroundColor="#436E99" >
-            <Image Source="Titulo_AcercaDe.jpg"></Image>
+        <StackLayout BackgroundColor="GreenYellow" >
+
             <Label FontSize="5" />
-            <Label Text=" Acerca de:" FontSize="30" FontAttributes="Bold" TextColor="White" />
-            <Label Text="DÍAbetes es una aplicación móvil 100% diseñada pensando en las personas con diabetes que necesitan llevar un registro y control diario realizado por un glucómetro."
-                   TextColor="Black" FontSize="16"/>
+            <Label Text=" Hipoglucemia" FontSize="20" FontAttributes="Bold" TextColor="Black" />
+            <Label Text="Situación en la que los valores de glucosa en sngre (glucemia) estan por debajo de lo normal."
+                   TextColor="Black" FontSize="10"/>
             <Label FontSize="5" />
-            <Label Text=" Principales Objetivos:" TextColor="White" FontSize="19" />
+            <Label Text=" Valores establecidos en esta aplicación:" TextColor="Black" FontSize="15" />
             <Label FontSize="5" />
             <StackLayout Orientation="Horizontal">
-                <Image Source="Registro_AcercaDe.png" WidthRequest="50" />
-                <Label Text="Registro de control y visualización de resultados a través de listado de reportes mensuales, históricos y reportes con gráficas." TextColor="Black" FontSize="16" />
+                <Image Source="HIPOGLUCEMIA.png" WidthRequest="50" />
+                <Label Text="Hipoglucemia severa en un rango de 0 a 20 mg/dL." TextColor="Black" FontSize="10" />
             </StackLayout>
             <Label />
             <StackLayout Orientation="Horizontal">
-                <Image Source="Envio_AcercaDe.jpg" WidthRequest="50" />
-                <Label Text="Facilitar el envío de resultados a su médico tratante de acuerdo al registro de control realizado durante el periodo indicado." TextColor="Black" FontSize="16" />
+                <Image Source="HIPOGLUCEMIA.png" WidthRequest="50" />
+                <Label Text="Hipoglucemia elevada en un rango de 21 a 65 mg/dL." TextColor="Black" FontSize="10" />
             </StackLayout>
+
+            <Label FontSize="10" />
+            <Label Text=" Normoglucemia" FontSize="20" FontAttributes="Bold" TextColor="Black" />
+            <Label Text="Niveles normales dde glucosa en la sangre.En ayunas entre 70 y 110 miligramos de glucosa."
+                   TextColor="Black" FontSize="10"/>
+            <Label FontSize="5" />
+            <Label Text=" Valores establecidos en esta aplicación:" TextColor="Black" FontSize="15" />
+            <Label FontSize="5" />
+            <StackLayout Orientation="Horizontal">
+                <Image Source="Normoglucemia.jpg" WidthRequest="50" />
+                <Label Text="Nivel Normal en un rango de 66 a 132 mg/dL" TextColor="Black" FontSize="10" />
+            </StackLayout>
+            <Label />
+            <StackLayout Orientation="Horizontal">
+                <Image Source="Normoglucemia.jpg" WidthRequest="50" />
+                <Label Text="Nivel Normal en un rango de 133 a 197 mg/dL" TextColor="Black" FontSize="10" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Image Source="Normoglucemia.jpg" WidthRequest="50" />
+                <Label Text="Nivel Normal en un rango de 198 a 397 mg/dL" TextColor="Black" FontSize="16" />
+            </StackLayout>
+
+            <Label FontSize="10" />
+            <Label Text=" Hiperglucemia" FontSize="20" FontAttributes="Bold" TextColor="Black" />
+            <Label Text="Situación en la que los valores de glucosa en sangre (glucemia) estan por encima de lo normal."
+                   TextColor="Black" FontSize="10"/>
+            <Label FontSize="5" />
+            <Label Text=" Valores establecidos en esta aplicación:" TextColor="Black" FontSize="15" />
+            <Label FontSize="5" />
+            <StackLayout Orientation="Horizontal">
+                <Image Source="descarga.png" WidthRequest="50" />
+                <Label Text="Hiperglucemia elevada en un rango de 398 a 600 mg/dL" TextColor="Black" FontSize="10" />
+            </StackLayout>
+            <Label />
+            <StackLayout Orientation="Horizontal">
+                <Image Source="descarga.jpg" WidthRequest="50" />
+                <Label Text="Hiperglucemia severa en un rango de 601 a mas mg/dL" TextColor="Black" FontSize="10" />
+            </StackLayout>
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
