@@ -110,5 +110,14 @@
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\Envio_AcercaDe.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\ULTIMA\descarga.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\ULTIMA\HIPOGLUCEMIA.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\ULTIMA\Normoglucemia.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>

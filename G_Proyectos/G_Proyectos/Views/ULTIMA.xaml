@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="G_Proyectos.Views.Page1">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="#436E99" >
+            <Image Source="Titulo_AcercaDe.jpg"></Image>
+            <Label FontSize="5" />
+            <Label Text=" Acerca de:" FontSize="30" FontAttributes="Bold" TextColor="White" />
+            <Label Text="DÍAbetes es una aplicación móvil 100% diseñada pensando en las personas con diabetes que necesitan llevar un registro y control diario realizado por un glucómetro."
+                   TextColor="Black" FontSize="16"/>
+            <Label FontSize="5" />
+            <Label Text=" Principales Objetivos:" TextColor="White" FontSize="19" />
+            <Label FontSize="5" />
+            <StackLayout Orientation="Horizontal">
+                <Image Source="Registro_AcercaDe.png" WidthRequest="50" />
+                <Label Text="Registro de control y visualización de resultados a través de listado de reportes mensuales, históricos y reportes con gráficas." TextColor="Black" FontSize="16" />
+            </StackLayout>
+            <Label />
+            <StackLayout Orientation="Horizontal">
+                <Image Source="Envio_AcercaDe.jpg" WidthRequest="50" />
+                <Label Text="Facilitar el envío de resultados a su médico tratante de acuerdo al registro de control realizado durante el periodo indicado." TextColor="Black" FontSize="16" />
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
