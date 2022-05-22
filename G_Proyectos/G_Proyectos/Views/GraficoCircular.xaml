@@ -6,19 +6,27 @@
              x:Class="G_Proyectos.Views.GraficoCircular">
     <ContentPage.Content>
         <StackLayout Background="white">
-
-            <StackLayout Orientation="Horizontal">
-                
-                <Frame Grid.Column="0" VerticalOptions="Center">
-                    <Label Text="Hipoglucosa Severa"  />
-                </Frame>
             
-            
-                <Frame Grid.Column="1" VerticalOptions="StartAndExpand">
+            <StackLayout Margin="6" Background="blue">
 
-                    <chart:SfChart WidthRequest="130" >
+                <StackLayout Orientation="Horizontal" Margin="2" Background="white" >
+                    <Label/>
+                    <Label FontFamily="fontello"
+                           FontSize="14"
+                           HorizontalOptions="Start"
+                           Text="&#xF0C8;"
+                           TextColor="Blue"
+                           VerticalOptions="Center"
+                           />
+                    <Label Text="Hipoglucosa Severa" TextColor="Black" FontSize="10" VerticalOptions="CenterAndExpand" HorizontalOptions="StartAndExpand"/>
+
+
+
+
+                    <chart:SfChart WidthRequest="130" HorizontalOptions="Center">
                         <chart:SfChart.Series>
-                            <chart:PieSeries EnableAnimation="True" ItemsSource="{Binding Data}" XBindingPath="Name" YBindingPath="Quantity" EnableTooltip="True"> <!--ItemsSources para colocar los datos a mostrar en el gráfico-->
+                            <chart:PieSeries EnableAnimation="True" ItemsSource="{Binding Data}" XBindingPath="Name" YBindingPath="Quantity" EnableTooltip="True">
+                                <!--ItemsSources para colocar los datos a mostrar en el gráfico-->
                                 <chart:PieSeries.DataMarker>
                                     <chart:ChartDataMarker LabelContent="Percentage">
                                         <chart:ChartDataMarker.LabelStyle>
@@ -30,9 +38,8 @@
                                 <chart:PieSeries.ColorModel>
                                     <chart:ChartColorModel Palette="Custom">
                                         <chart:ChartColorModel.CustomBrushes>
-                                            <Color>#868711</Color>
-                                            <Color>#bf2b20</Color>
-                                            <Color>#757372</Color>
+                                            <Color>blue</Color>
+                                            <Color>skyblue</Color>
                                         </chart:ChartColorModel.CustomBrushes>
                                     </chart:ChartColorModel>
                                 </chart:PieSeries.ColorModel>
@@ -40,14 +47,44 @@
                         </chart:SfChart.Series>
                     </chart:SfChart>
 
-                </Frame>
 
-                <Frame Grid.Column="2">
-                    <Label Text="Hipoglucosa Elevada"  />
-                </Frame>
+
+                    <Label Text="Hipoglucosa Elevada" TextColor="Black" FontSize="10" VerticalOptions="CenterAndExpand" HorizontalOptions="EndAndExpand"/>
+
+                    <Label FontFamily="fontello"
+                           FontSize="14"
+                           HorizontalOptions="Start"
+                           Text="&#xF0C8;"
+                           TextColor="skyblue"
+                           VerticalOptions="Center"
+                           />
+                    <Label/>
+                    
+                </StackLayout>
+
             </StackLayout>
-            
-            
+
+            <StackLayout Margin="6" Background="blue" VerticalOptions="Start">
+
+                <StackLayout Margin="2" Background="white" HeightRequest="455" >
+                    
+                    <!--Para Colocar la informacion de la hipglucosa-->
+                    
+                </StackLayout>
+                
+            </StackLayout>
+
+            <Button x:Name="btnCerrar"
+                        Text="CERRAR" 
+                            TextColor="#F4F4F4"
+                            FontAttributes="Bold"
+                            BackgroundColor="red"
+                            BorderColor="#F4F4F4"
+                            BorderWidth="2"
+                            CornerRadius="8"
+                            HeightRequest="60"
+                        Margin="10"/>
+
         </StackLayout>
 
         
