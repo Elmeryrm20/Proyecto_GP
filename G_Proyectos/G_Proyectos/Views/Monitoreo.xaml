@@ -17,7 +17,7 @@
                 <Button Text="INGRESAR" Clicked="Button_Clicked"
                         TextColor="#F4F4F4"
                         BackgroundColor="#169FCF"
-                        BorderColor="#F4F4F4"
+                        BorderColor="#7DC3DB"
                         BorderWidth="1"
                         CornerRadius="10"
                         Padding="10"/>
@@ -31,7 +31,9 @@
                 <Label Text="HORA"/>
                 <TimePicker x:Name="hora"/>
             </StackLayout>
-            
+            <ListView Background="#7DC3DB" >
+                
+            </ListView>
 
         </StackLayout>
     </ContentPage.Content>
