@@ -1,12 +1,91 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+﻿
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="G_Proyectos.Views.IniciarSesion">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="INICIAR SESION"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+
+        <ScrollView>
+
+            <Grid>
+                <Grid RowSpacing="0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <!--parte-->
+                    <BoxView BackgroundColor="Blue" Grid.Row="0"/>
+                    <!--parte imagen-->
+                    <BoxView BackgroundColor="Yellow" Grid.Row="1"/>
+                    <!--parte label iniciar sesion -->
+                    <Label Text="INICIAR SESION" Grid.Row="2"
+                           HorizontalOptions="Center"/>
+                    <!--parte correo electronico -->
+                    <Entry x:Name="userentry"  Grid.Row="3"
+                       Keyboard="Default" 
+                       Placeholder="Correo eléctronico"
+                       TextColor="#1187B0" />
+                    <!--parte contraseña-->
+                    <Entry x:Name="passwordentry" Grid.Row="4"
+                       IsPassword="True" 
+                       Keyboard="Default" 
+                       TextColor="#1187B0"
+                       Placeholder="Contraseña" />
+                    <!--parte button iniciar sesion-->
+                    <Button Text="INICIAR SESION"  Grid.Row="5"
+                        Clicked="Btniniciarsesion_Clicked"
+                            TextColor="#F4F4F4"
+                            BackgroundColor="#169FCF"
+                            BorderColor="#F4F4F4"
+                            BorderWidth="2"
+                            CornerRadius="25"
+                            WidthRequest="150"
+                            HeightRequest="50"
+                        Margin="80,0" />
+                    
+                    <!--parte olvidaste tu contraseña-->
+                        <Grid Grid.Row="6">
+                            <Grid ColumnDefinitions="*"/>
+                            <Grid ColumnDefinitions="*"/>
+                        </Grid>
+                        <StackLayout Grid.Row="6" Grid.Column="0" >
+                            <Button Text="¿Olvidó su contraseña?" Grid.Column="0"
+                            TextColor="#F4F4F4"
+                            BackgroundColor="#169FCF"
+                            BorderColor="#F4F4F4"
+                            BorderWidth="2"
+                            CornerRadius="25"
+                            WidthRequest="150"
+                            HeightRequest="50"
+                        Margin="80,0" />
+                        </StackLayout>
+                </Grid>
+            </Grid>
+        </ScrollView>
+
+        <!--
+                <Label Text="INICIAR SESION" 
+                       HorizontalOptions="Center"
+                       TextColor="Black"
+                       Grid.Row="0"/>
+                <Entry x:Name="userentry" 
+                       Keyboard="Default" 
+                       Placeholder="Correo eléctronico"
+                       TextColor="#1187B0"
+                       Grid.Row="1"/>
+                <Entry x:Name="passwordentry" 
+                       IsPassword="True" 
+                       Keyboard="Default" 
+                       TextColor="#1187B0"
+                       Placeholder="Contraseña"
+                       Grid.Row="2"/>
+                <Button Text="INICIAR SESION" 
+                        Clicked="Btniniciarsesion_Clicked"
+                        Grid.Row="3" />
+            </Grid>-->
     </ContentPage.Content>
 </ContentPage>

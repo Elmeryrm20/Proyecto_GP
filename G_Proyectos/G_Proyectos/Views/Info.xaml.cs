@@ -10,15 +10,11 @@ using Xamarin.Forms.Xaml;
 namespace G_Proyectos.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class IniciarSesion : ContentPage
+    public partial class Info : ContentPage
     {
-        public IniciarSesion()
+        public Info()
         {
             InitializeComponent();
-        }
-        private void Btniniciarsesion_Clicked(object sender, EventArgs e)
-        {
-
         }
     }
 }

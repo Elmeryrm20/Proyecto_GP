@@ -6,6 +6,7 @@ using System.IO;
 
 namespace G_Proyectos
 {
+
     public partial class App : Application
     {
         static SQLiteConeccion db;

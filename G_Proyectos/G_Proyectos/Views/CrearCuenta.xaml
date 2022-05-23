@@ -3,10 +3,72 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="G_Proyectos.Views.CrearCuenta">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="CREAR CUENTA"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+        <Grid VerticalOptions="CenterAndExpand">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Label Text="Crea tu cuenta de Diabetes" 
+                       HorizontalOptions="Center"
+                       TextColor="Black"
+                       Grid.Row="0"/>
+            <Entry x:Name="correoelectronico" 
+                       Placeholder="Correo eléctronico"
+                       Keyboard="Default" 
+                       TextColor="#1187B0"
+                       Grid.Row="1"/>
+            <Entry x:Name="userentry" 
+                       Placeholder="Usuario"
+                       Keyboard="Default" 
+                       TextColor="#1187B0"
+                       Grid.Row="2"/>
+            <Entry x:Name="passwordentry" 
+                       Placeholder="Contraseña"
+                       IsPassword="True" 
+                       Keyboard="Default" 
+                       TextColor="#1187B0"
+                       Grid.Row="3"/>
+            <Entry x:Name="passworrepetdentry" 
+                       Placeholder="Confirmar Contraseña"
+                       IsPassword="True" 
+                       Keyboard="Default" 
+                       TextColor="#1187B0"
+                       Grid.Row="4"/>
+            <Button Text="CREAR CUENTA" x:Name="btncrearcuenta"
+                        Clicked="Btncrearcuenta_Clicked"
+                        TextColor="#F4F4F4"
+                        BackgroundColor="#169FCF"
+                        BorderColor="#F4F4F4"
+                        BorderWidth="2"
+                        CornerRadius="25"
+                        WidthRequest="150"
+                        HeightRequest="50"
+                        Margin="80,0" 
+                        Grid.Row="5" />
+
+            <ListView x:Name="listaU" Grid.Row="6">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="auto"/>
+                                    <RowDefinition Height="auto"/>
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <Label Text="{Binding CorreoU}" Grid.Row="0" Grid.Column="0"/>
+                                <Label Text="{Binding NombreU}" Grid.Row="0" Grid.Column="1"/>
+                                <Label Text="{Binding Contraseña}" Grid.Row="0" Grid.Column="2"/>
+                            </Grid>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </Grid>
     </ContentPage.Content>
 </ContentPage>
