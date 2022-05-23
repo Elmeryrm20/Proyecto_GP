@@ -7,9 +7,32 @@
     
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="MONITOREO"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <StackLayout Orientation="Horizontal" Background="azure" Padding="20" HorizontalOptions="CenterAndExpand" Spacing="20">
+                <RadioButton Content="Automático" CheckedChanged="RadioButton_CheckedChanged"/>
+                <RadioButton Content="Manual" CheckedChanged="RadioButton_CheckedChanged_1"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" Background="yellow" Padding="20" HorizontalOptions="CenterAndExpand">
+                <Label  Text="VALOR:" />
+                <Entry x:Name="valorglucometro" WidthRequest="130" Keyboard="Numeric" />
+                <Button Text="INGRESAR" Clicked="Button_Clicked"
+                        TextColor="#F4F4F4"
+                        BackgroundColor="#169FCF"
+                        BorderColor="#F4F4F4"
+                        BorderWidth="1"
+                        CornerRadius="10"
+                        Padding="10"/>
+            </StackLayout>
+            <StackLayout Padding="20" BackgroundColor="Red" HorizontalOptions="CenterAndExpand">
+                <Entry x:Name="ingresanota" WidthRequest="200"/>
+            </StackLayout>
+            <StackLayout Padding="20" Orientation="Horizontal" Background="yellow" HorizontalOptions="Center">
+                <Label Text="FECHA"/>
+                <DatePicker x:Name="fecha"/>
+                <Label Text="HORA"/>
+                <TimePicker x:Name="hora"/>
+            </StackLayout>
+            
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

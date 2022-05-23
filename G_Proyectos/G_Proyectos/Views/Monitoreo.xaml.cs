@@ -16,5 +16,25 @@ namespace G_Proyectos.Views
         {
             InitializeComponent();
         }
+
+        private void RadioButton_CheckedChanged(object sender, CheckedChangedEventArgs e)
+        {
+
+        }
+
+        private void RadioButton_CheckedChanged_1(object sender, CheckedChangedEventArgs e)
+        {
+
+        }
+
+        private void Button_Clicked(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Button_Clicked_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }
