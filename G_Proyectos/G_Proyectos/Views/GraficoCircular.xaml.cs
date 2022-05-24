@@ -1,4 +1,4 @@
-﻿using G_Proyectos.SQLite;
+﻿
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,9 +17,12 @@ namespace G_Proyectos.Views
     {
         public GraficoCircular()
         {
+
+            Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("NjQ0NDMxQDMyMzAyZTMxMmUzMFBPTUJMUjJ4Sk9yUm1yTHJ2eTl2ZUlRcEFrRUxzYXU0T3VZVG5YWTlta289");
+
             InitializeComponent();
 
-            BindingContext = new Monitoreo();
+            BindingContext = new SQLite.Monitoreo();
         }
 
         
