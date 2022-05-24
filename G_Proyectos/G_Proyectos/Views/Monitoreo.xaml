@@ -6,41 +6,41 @@
              Icon="monitoreo.png">
 
     <ContentPage.Content>
-        <StackLayout>
-            <Grid VerticalOptions="CenterAndExpand">
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="Auto"/>
-                    <RowDefinition Height="Auto"/>
-                    <RowDefinition Height="Auto"/>
-                </Grid.RowDefinitions>
-                <Label Text="MONITOREO" 
-                       HorizontalOptions="Center"
-                       TextColor="Black"
-                       Grid.Row="0"/>
+        <StackLayout Background="azure" >
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Margin="15" Background="white">
+                <RadioButton Content="Automático" />
+                <RadioButton Content="Manual"/>
+            </StackLayout>
+            <StackLayout Background="#FFFFFF"  Margin="0" Padding="10" HorizontalOptions="Center" Orientation="Horizontal">
+                <Label Text="VALOR:" FontSize="Medium"/>
                 <Entry x:Name="MonitoreoValor" 
-                       Placeholder="Valor Gluometro"
+                       Placeholder="Valor Glucometro"
                        Keyboard="Default" 
                        TextColor="#1187B0"
-                       Grid.Row="1"/>
+                       WidthRequest="150"/>
                 <Button Text="INGRESAR" x:Name="BtnIngresar"
                         Clicked="BtnIngresar_Clicked"
                         TextColor="#F4F4F4"
+                        HeightRequest="40"
                         BackgroundColor="#169FCF"
                         BorderColor="#F4F4F4"
-                        BorderWidth="1"
-                        CornerRadius="5"
-                        WidthRequest="100"
-                        HeightRequest="40"
-                        Margin="50,0" 
-                        Grid.Row="1"
-                        HorizontalOptions="EndAndExpand"/>
+                        CornerRadius="5" />
+            </StackLayout>
+            <StackLayout Background="#FFFFFF"   Padding="10" HorizontalOptions="Center" Orientation="Horizontal" >
                 <Entry x:Name="Nota" 
                        Placeholder="Ingrese Nota"
                        Keyboard="Default" 
                        TextColor="#1187B0"
-                       Grid.Row="3"/>
-
-                <ListView x:Name="listaM" Grid.Row="4" >
+                       WidthRequest="300"/>
+            </StackLayout>
+            <StackLayout  Background="#FFFFFF"  Padding="10" HorizontalOptions="Center" Orientation="Horizontal" >
+                <Label Text="FECHA"/>
+                <DatePicker x:DataType="DatePicker"/>
+                <Label Text="HORA"/>
+                <TimePicker x:DataType="TimePicker"/>
+            </StackLayout>
+            <StackLayout Background="white" Margin="20">
+                <ListView x:Name="listaM">
                     <ListView.ItemTemplate>
                         <DataTemplate>
                             <ViewCell>
@@ -60,6 +60,19 @@
                         </DataTemplate>
                     </ListView.ItemTemplate>
                 </ListView>
+            </StackLayout>
+            <Grid VerticalOptions="CenterAndExpand">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                
+                
+                
+                
+
+                
             </Grid>
         </StackLayout>
     </ContentPage.Content>
