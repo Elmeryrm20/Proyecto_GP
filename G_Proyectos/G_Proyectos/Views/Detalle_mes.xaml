@@ -1,0 +1,273 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="G_Proyectos.Views.Detalle_mes"
+             NavigationPage.HasNavigationBar="False">
+
+    <ScrollView>
+    <StackLayout BackgroundColor="White" Padding="15,20,15,10" >
+
+    <StackLayout Orientation="Horizontal" Padding="0,10,0,10">
+
+        <Grid>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="2*"/>
+            </Grid.ColumnDefinitions>
+
+
+            <Image Grid.Column="0" Source="corazon.png" WidthRequest="30" Margin="5,0,5,0"/>
+
+            <Label Grid.Column="1" Text="199mg/dL" TextColor="Black" FontSize="16"  Margin="5,0,5,0"  />
+            <Label Grid.Column="2" Text= "2-Oct-2020  03:19 AM" TextColor="Black" FontSize="14" Margin="5,0,5,0" />
+
+        </Grid>
+
+    </StackLayout>
+
+    <StackLayout Orientation="Horizontal" Padding="0,10,0,10">
+
+        <Grid>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="2*"/>
+            </Grid.ColumnDefinitions>
+
+
+                <Image Grid.Column="0" Source="corazon.png" WidthRequest="30" Margin="5,0,5,0"/>
+
+            <Label Grid.Column="1" Text="199mg/dL" TextColor="Black" FontSize="16"  Margin="5,0,5,0"  />
+            <Label Grid.Column="2" Text= "2-Oct-2020  03:19 AM" TextColor="Black" FontSize="14" Margin="5,0,5,0" />
+
+        </Grid>
+
+    </StackLayout>
+
+    <StackLayout Orientation="Horizontal" Padding="0,10,0,10">
+
+        <Grid>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="2*"/>
+            </Grid.ColumnDefinitions>
+
+
+                <Image Grid.Column="0" Source="corazon.png" WidthRequest="30" Margin="5,0,5,0"/>
+
+            <Label Grid.Column="1" Text="199mg/dL" TextColor="Black" FontSize="16"  Margin="5,0,5,0"  />
+            <Label Grid.Column="2" Text= "2-Oct-2020  03:19 AM" TextColor="Black" FontSize="14" Margin="5,0,5,0" />
+
+        </Grid>
+
+    </StackLayout>
+
+    <StackLayout Orientation="Horizontal" Padding="0,10,0,10">
+
+        <Grid>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="2*"/>
+            </Grid.ColumnDefinitions>
+
+
+                <Image Grid.Column="0" Source="corazon.png" WidthRequest="30" Margin="5,0,5,0"/>
+
+            <Label Grid.Column="1" Text="199mg/dL" TextColor="Black" FontSize="16"  Margin="5,0,5,0"  />
+            <Label Grid.Column="2" Text= "2-Oct-2020  03:19 AM" TextColor="Black" FontSize="14" Margin="5,0,5,0" />
+
+        </Grid>
+
+    </StackLayout>
+
+    <StackLayout Orientation="Horizontal" Padding="0,10,0,10">
+
+        <Grid>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="2*"/>
+            </Grid.ColumnDefinitions>
+
+
+                <Image Grid.Column="0" Source="corazon.png" WidthRequest="30" Margin="5,0,5,0"/>
+
+            <Label Grid.Column="1" Text="199mg/dL" TextColor="Black" FontSize="16"  Margin="5,0,5,0"  />
+            <Label Grid.Column="2" Text= "2-Oct-2020  03:19 AM" TextColor="Black" FontSize="14" Margin="5,0,5,0" />
+
+        </Grid>
+
+    </StackLayout>
+
+    <StackLayout Orientation="Horizontal" Padding="0,10,0,10">
+
+        <Grid>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="2*"/>
+            </Grid.ColumnDefinitions>
+
+
+                <Image Grid.Column="0" Source="corazon.png" WidthRequest="30" Margin="5,0,5,0"/>
+
+            <Label Grid.Column="1" Text="199mg/dL" TextColor="Black" FontSize="16"  Margin="5,0,5,0"  />
+            <Label Grid.Column="2" Text= "2-Oct-2020  03:19 AM" TextColor="Black" FontSize="14" Margin="5,0,5,0" />
+
+        </Grid>
+
+    </StackLayout>
+
+
+    <StackLayout Orientation="Horizontal" Padding="0,10,0,10">
+
+        <Grid>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="2*"/>
+            </Grid.ColumnDefinitions>
+
+
+                <Image Grid.Column="0" Source="corazon.png" WidthRequest="30" Margin="5,0,5,0"/>
+
+            <Label Grid.Column="1" Text="199mg/dL" TextColor="Black" FontSize="16"  Margin="5,0,5,0"  />
+            <Label Grid.Column="2" Text= "2-Oct-2020  03:19 AM" TextColor="Black" FontSize="14" Margin="5,0,5,0" />
+
+        </Grid>
+
+    </StackLayout>
+
+    <StackLayout Orientation="Horizontal" Padding="0,10,0,10">
+
+        <Grid>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="2*"/>
+            </Grid.ColumnDefinitions>
+
+
+                <Image Grid.Column="0" Source="corazon.png" WidthRequest="30" Margin="5,0,5,0"/>
+
+            <Label Grid.Column="1" Text="199mg/dL" TextColor="Black" FontSize="16"  Margin="5,0,5,0"  />
+            <Label Grid.Column="2" Text= "2-Oct-2020  03:19 AM" TextColor="Black" FontSize="14" Margin="5,0,5,0" />
+
+        </Grid>
+
+    </StackLayout>
+
+    <StackLayout Orientation="Horizontal" Padding="0,10,0,10">
+
+        <Grid>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="2*"/>
+            </Grid.ColumnDefinitions>
+
+
+                <Image Grid.Column="0" Source="corazon.png" WidthRequest="30" Margin="5,0,5,0"/>
+
+            <Label Grid.Column="1" Text="199mg/dL" TextColor="Black" FontSize="16"  Margin="5,0,5,0"  />
+            <Label Grid.Column="2" Text= "2-Oct-2020  03:19 AM" TextColor="Black" FontSize="14" Margin="5,0,5,0" />
+
+        </Grid>
+
+    </StackLayout>
+
+    <StackLayout Orientation="Horizontal" Padding="0,10,0,10">
+
+        <Grid>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="2*"/>
+            </Grid.ColumnDefinitions>
+
+
+                <Image Grid.Column="0" Source="corazon.png" WidthRequest="30" Margin="5,0,5,0"/>
+
+            <Label Grid.Column="1" Text="199mg/dL" TextColor="Black" FontSize="16"  Margin="5,0,5,0"  />
+            <Label Grid.Column="2" Text= "2-Oct-2020  03:19 AM" TextColor="Black" FontSize="14" Margin="5,0,5,0" />
+
+        </Grid>
+
+    </StackLayout>
+
+    <StackLayout Orientation="Horizontal" Padding="0,10,0,10">
+
+        <Grid>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="2*"/>
+            </Grid.ColumnDefinitions>
+
+
+                <Image Grid.Column="0" Source="corazon.png" WidthRequest="30" Margin="5,0,5,0"/>
+
+            <Label Grid.Column="1" Text="199mg/dL" TextColor="Black" FontSize="16"  Margin="5,0,5,0"  />
+            <Label Grid.Column="2" Text= "2-Oct-2020  03:19 AM" TextColor="Black" FontSize="14" Margin="5,0,5,0" />
+
+        </Grid>
+
+    </StackLayout>
+
+    <StackLayout Orientation="Horizontal" Padding="0,10,0,10">
+
+        <Grid>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="2*"/>
+            </Grid.ColumnDefinitions>
+
+
+                <Image Grid.Column="0" Source="corazon.png" WidthRequest="30" Margin="5,0,5,0"/>
+
+            <Label Grid.Column="1" Text="199mg/dL" TextColor="Black" FontSize="16"  Margin="5,0,5,0"  />
+            <Label Grid.Column="2" Text= "2-Oct-2020  03:19 AM" TextColor="Black" FontSize="14" Margin="5,0,5,0" />
+
+        </Grid>
+
+    </StackLayout>
+
+        <StackLayout Orientation="Horizontal" Padding="0,10,0,10">
+
+            <Grid>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="2*"/>
+                </Grid.ColumnDefinitions>
+
+
+                <Image Grid.Column="0" Source="corazon.png" WidthRequest="30" Margin="5,0,5,0"/>
+
+                <Label Grid.Column="1" Text="199mg/dL" TextColor="Black" FontSize="16"  Margin="5,0,5,0"  />
+                <Label Grid.Column="2" Text= "2-Oct-2020  03:19 AM" TextColor="Black" FontSize="14" Margin="5,0,5,0" />
+
+            </Grid>
+
+        </StackLayout>
+
+    </StackLayout>
+    </ScrollView>
+</ContentPage>
