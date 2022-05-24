@@ -16,5 +16,10 @@ namespace G_Proyectos.Views
         {
             InitializeComponent();
         }
+
+        private void btnactualizarcuenta_Clicked(object sender, EventArgs e)
+        {
+
+        }
     }
 }
