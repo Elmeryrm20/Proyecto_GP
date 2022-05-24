@@ -28,5 +28,20 @@ namespace G_Proyectos.Views
             App.MasterD.IsPresented = false;
             await App.MasterD.Detail.Navigation.PushAsync(new MiInformacion());
         }
+
+        private void btnreportes_Clicked(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnacercade_Clicked(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btncerrarsesion_Clicked(object sender, EventArgs e)
+        {
+
+        }
     }
 }

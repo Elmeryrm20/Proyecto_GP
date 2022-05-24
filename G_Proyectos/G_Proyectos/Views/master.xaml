@@ -7,10 +7,10 @@
     <StackLayout>
         <Button Text="Inicio" x:Name="btninicio" Clicked="btninicio_Clicked" />
         <Button Text="Mi Informacion" x:Name="btninformacion" Clicked="btninformacion_Clicked" />
-        <Button Text="Registro de Control"/>
-        <Button Text="Mis Reportes"/>
-        <Button Text="Acerca de"/>
-        <Button Text="Cerrar Sesión"/>
+        <Button Text="Registro de Control" x:Name="btnregistro" Clicked="btninformacion_Clicked"/>
+        <Button Text="Mis Reportes" x:Name="btnreportes" Clicked="btnreportes_Clicked"/>
+        <Button Text="Acerca de" x:Name="btnacercade" Clicked="btnacercade_Clicked"/>
+        <Button Text="Cerrar Sesión" x:Name="btncerrarsesion" Clicked="btncerrarsesion_Clicked"/>
     </StackLayout>
     
 
