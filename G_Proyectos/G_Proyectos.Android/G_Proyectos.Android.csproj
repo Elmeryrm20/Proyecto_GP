@@ -64,10 +64,10 @@
       <Version>1.8.116</Version>
     </PackageReference>
     <PackageReference Include="Syncfusion.Xamarin.SfChart">
-      <Version>20.1.0.47</Version>
+      <Version>20.1.0.56</Version>
     </PackageReference>
-    <PackageReference Include="Xamarin.Forms" Version="5.0.0.2401" />
-    <PackageReference Include="Xamarin.Essentials" Version="1.7.3" />
+    <PackageReference Include="Xamarin.Forms" Version="5.0.0.2196" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.7.0" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MainActivity.cs" />
