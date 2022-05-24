@@ -1,4 +1,5 @@
-﻿using System;
+﻿using G_Proyectos.SQLite;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,6 +16,32 @@ namespace G_Proyectos.Views
         public Monitoreo()
         {
             InitializeComponent();
+            MostrarMonitoreos();
+        }
+
+        private async void BtnIngresar_Clicked(object sender, EventArgs e)
+        {
+
+            if (true)
+            {
+                Monitoreobase Moni = new Monitoreobase
+                {
+                    Precion = MonitoreoValor.Text+" mg/dl",
+                    FecRegistro =DateTime.Now,
+                    NotaMonitoreo = Nota.Text
+                };
+                await App.SQLiteDB.InsertarMonitoreo(Moni);
+                await DisplayAlert("Advetencia", "Monitoreo Registrado", "OK");
+                MostrarMonitoreos();
+            }
+        }
+        public async void MostrarMonitoreos()
+        {
+            var UsuarioList = await App.SQLiteDB.ListaMonitoreos();
+            if (UsuarioList != null)
+            {
+                listaM.ItemsSource = UsuarioList;
+            }
         }
     }
 }
