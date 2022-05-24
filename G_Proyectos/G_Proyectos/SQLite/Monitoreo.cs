@@ -13,7 +13,7 @@ namespace G_Proyectos.SQLite
         public int Id { get; set; }
 
         [MaxLength(50)]
-        public string Precion { get; set; }
+        public int Precion { get; set; }
 
         [MaxLength(50)]
         public DateTime FecRegistro { get; set; }

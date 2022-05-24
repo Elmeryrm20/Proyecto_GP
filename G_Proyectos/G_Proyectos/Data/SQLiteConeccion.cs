@@ -54,5 +54,10 @@ namespace G_Proyectos.Data
         {
             return db.InsertAsync(Mon);
         }
+        public IEnumerable<Monitoreobase> Hipoglucemia(string Fecha)
+        {
+            var result = db.QueryAsync<Monitoreobase>("Select * from Monitoreobase Where Precion<=65 and FecRegistro=?", Fecha);
+            return result.Result;
+        }
     }
 }

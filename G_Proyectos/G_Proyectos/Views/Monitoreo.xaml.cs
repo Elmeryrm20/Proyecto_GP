@@ -26,7 +26,7 @@ namespace G_Proyectos.Views
             {
                 Monitoreobase Moni = new Monitoreobase
                 {
-                    Precion = MonitoreoValor.Text + " mg/dl",
+                    Precion =Convert.ToInt32(MonitoreoValor.Text),
                     FecRegistro = DateTime.Now,
                     NotaMonitoreo = Nota.Text
                 };
