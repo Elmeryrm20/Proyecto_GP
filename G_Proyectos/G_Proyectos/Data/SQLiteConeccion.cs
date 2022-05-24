@@ -39,5 +39,12 @@ namespace G_Proyectos.Data
             }
            
         }
+        public IEnumerable<Usuario> BuscarUsuario(string correo,string contra)
+        {
+            var result = db.QueryAsync<Usuario>("Select * from Usuario Where CorreoU=? and Contraseña=?", correo, contra);
+
+
+            return result.Result;
+        }
     }
 }

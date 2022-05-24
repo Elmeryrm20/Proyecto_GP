@@ -23,10 +23,10 @@
 
 
 
-                    <chart:SfChart WidthRequest="130" HorizontalOptions="Center">
+                    <!-- <chart:SfChart WidthRequest="130" HorizontalOptions="Center">
                         <chart:SfChart.Series>
-                            <chart:PieSeries EnableAnimation="True" ItemsSource="{Binding Data}" XBindingPath="Name" YBindingPath="Quantity" EnableTooltip="True">
-                                <!--ItemsSources para colocar los datos a mostrar en el gráfico-->
+                            <chart:PieSeries EnableAnimation="True" ItemsSource="{Binding Id}" XBindingPath="Name" YBindingPath="Quantity" EnableTooltip="True">
+                                ItemsSources para colocar los datos a mostrar en el gráfico
                                 <chart:PieSeries.DataMarker>
                                     <chart:ChartDataMarker LabelContent="Percentage">
                                         <chart:ChartDataMarker.LabelStyle>
@@ -45,7 +45,7 @@
                                 </chart:PieSeries.ColorModel>
                             </chart:PieSeries>
                         </chart:SfChart.Series>
-                    </chart:SfChart>
+                    </chart:SfChart>-->
 
 
 

@@ -6,10 +6,39 @@
              Icon="info1.png">
     
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="CUENTA"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+        <StackLayout Background="azure">
+            <StackLayout Background="#FFFFFF" Margin="30" Padding="30" WidthRequest="300"  >
+                <Label Text="INFORMACIÓN DE TU CUENTA" FontAttributes="Bold" HorizontalOptions="Center" />
+                <StackLayout Orientation="Horizontal" Spacing="40">
+                    <Label Text="Email" HorizontalOptions="Start" />
+                    <Entry x:Name="email_cuenta" WidthRequest="220" HorizontalOptions="End" />
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" Spacing="50">
+                    <Label Text="Usuario" />
+                    <Entry x:Name="usuario_cuenta" WidthRequest="200" />
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" Spacing="30">
+                    <Label Text="Contraseña" />
+                    <Entry x:Name="contraseña_cuenta" WidthRequest="205" />
+                </StackLayout >
+                <StackLayout Orientation="Horizontal" Spacing="10">
+                    <Label Text="Rep contra" />
+                    <Entry x:Name="contraseñarepeta_cuenta" WidthRequest="220" />
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" Spacing="30">
+                    <Label Text="Activo" FontSize="Body"/>
+                    <Switch Toggled="Switch_Toggled"/>
+                </StackLayout>
+            </StackLayout>
+            
+            <StackLayout Padding="20" >
+                <Button x:Name="btnactualizarcuenta" Clicked="btnactualizarcuenta_Clicked"  
+                        Text="ACTULIZAR"
+                        Background="#7DC3DB"
+                        TextColor="#FFFFFF"
+                        CornerRadius="20"/>
+            </StackLayout>
         </StackLayout>
+        
     </ContentPage.Content>
 </ContentPage>

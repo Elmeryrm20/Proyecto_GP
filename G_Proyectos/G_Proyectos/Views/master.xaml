@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="G_Proyectos.Views.master"
+             Title="Master">
+
+    <StackLayout Margin="5" BackgroundColor="#75AECB" Padding="7" >
+        <StackLayout >
+            <Button Text="Inicio" x:Name="btninicio" Clicked="btninicio_Clicked" ImageSource="inicio.png" />
+        </StackLayout>
+        <StackLayout>
+            <Button Text="Mi Informacion" x:Name="btninformacion" ImageSource="miinfo.png" Clicked="btninformacion_Clicked" />
+        </StackLayout>
+        <StackLayout >
+            <Button Text="Registro de Control" x:Name="btnregistro" ImageSource="registro.png" Clicked="btnregistro_Clicked"/>
+        </StackLayout>
+        <StackLayout>
+            <Button Text="Mis Reportes" x:Name="btnreportes" ImageSource="reportes.png" Clicked="btnreportes_Clicked"/>
+        </StackLayout>
+        <StackLayout>
+            <Button Text="Acerca de" x:Name="btnacercade" ImageSource="acercade.png" Clicked="btnacercade_Clicked"/>
+        </StackLayout>
+        <StackLayout>
+            <Button Text="Cerrar Sesión" x:Name="btncerrarsesion" ImageSource="cerrar.png" Clicked="btncerrarsesion_Clicked"/>
+        </StackLayout>
+        
+    </StackLayout>
+    
+
+
+</ContentPage>

@@ -10,6 +10,8 @@ namespace G_Proyectos
     public partial class App : Application
     {
         static SQLiteConeccion db;
+
+        public static MasterDetailPage MasterD { get; set; }
         public App()
         {
             InitializeComponent();

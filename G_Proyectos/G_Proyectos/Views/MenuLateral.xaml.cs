@@ -10,21 +10,15 @@ using Xamarin.Forms.Xaml;
 namespace G_Proyectos.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Cuenta : ContentPage
+    public partial class MenuLateral : MasterDetailPage
     {
-        public Cuenta()
+        public MenuLateral()
         {
             InitializeComponent();
-        }
+            this.Master = new master();
+            this.Detail = new NavigationPage(new PaginaDeInicio());
 
-        private void btnactualizarcuenta_Clicked(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Switch_Toggled(object sender, ToggledEventArgs e)
-        {
-
+            App.MasterD = this;
         }
     }
 }

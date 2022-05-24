@@ -16,5 +16,20 @@ namespace G_Proyectos.Views
         {
             InitializeComponent();
         }
+
+        private void actualizarinfo_Clicked(object sender, EventArgs e)
+        {
+
+        }
+
+        private void actualizarinfo_Clicked_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void actualizarinfo_Clicked_2(object sender, EventArgs e)
+        {
+
+        }
     }
 }
