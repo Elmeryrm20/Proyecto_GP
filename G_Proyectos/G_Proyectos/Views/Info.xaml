@@ -6,42 +6,38 @@
              Icon="perfil1.png">
     <ContentPage.Content>
         <StackLayout Background="azure">
-            <StackLayout Background="#FFFFFF" HorizontalOptions="Center" Margin="30" Padding="30" >
+            <StackLayout Background="#FFFFFF" Margin="30" Padding="30" WidthRequest="300" >
                 <Label Text="MI INFORMACION PERSONAL" FontAttributes="Bold" HorizontalOptions="Center" />
-                <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
-                    <Label Text="Nombres" />
-                    <Entry x:Name="nombre" WidthRequest="150" />
+                <StackLayout Orientation="Horizontal" Spacing="40">
+                    <Label Text="Nombres" HorizontalOptions="Start" />
+                    <Entry x:Name="nombre" WidthRequest="200" HorizontalOptions="End" />
                 </StackLayout>
-                <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                <StackLayout Orientation="Horizontal" Spacing="40">
                     <Label Text="Apellidos" />
-                    <Entry x:Name="apellido" WidthRequest="150" />
+                    <Entry x:Name="apellido" WidthRequest="200" />
                 </StackLayout>
-                <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                <StackLayout Orientation="Horizontal" Spacing="50">
                     <Label Text="Fecha de Nac." />
-                    <DatePicker x:Name="fecha" WidthRequest="150" />
+                    <DatePicker x:Name="fecha" WidthRequest="130" />
                 </StackLayout >
-                <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                <StackLayout Orientation="Horizontal" Spacing="30">
                     <Label Text="N° de Celular" />
-                    <Entry x:Name="celular" WidthRequest="150" Keyboard="Numeric" />
+                    <Entry x:Name="celular" WidthRequest="190" Keyboard="Numeric" />
                 </StackLayout>
-                <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                <StackLayout Orientation="Horizontal" Spacing="10">
                     <Label Text="Tipo de Persona"/>
-                    <Entry x:Name="tipo_paciente" WidthRequest="150"/>
+                    <Entry x:Name="tipo_paciente" WidthRequest="190"/>
                 </StackLayout>
             </StackLayout>
-            <StackLayout Background="#FFFFFF" HorizontalOptions="Center" Margin="0" Padding="30" >
+            <StackLayout Background="#FFFFFF"  Margin="0" Padding="40" HorizontalOptions="Center">
                 <Label Text="MÉDICO TRATANTE" HorizontalOptions="Center" FontAttributes="Bold" />
-                <StackLayout Orientation="Horizontal" >
-                    <Label Text="N° Télefono"/>
-                    <Entry x:Name="telefono_medico" WidthRequest="150" Keyboard="Numeric" />
+                <StackLayout Orientation="Horizontal" Spacing="20">
+                    <Label Text="N° Télefono" />
+                    <Entry x:Name="telefono_medico" WidthRequest="180" Keyboard="Numeric" />
                 </StackLayout>
-                <StackLayout Orientation="Horizontal" >
-                    <StackLayout HorizontalOptions="Start">
-                        <Label Text="Email"/>
-                    </StackLayout>
-                    <StackLayout HorizontalOptions="End">
-                        <Entry x:Name="email" WidthRequest="150" />
-                    </StackLayout>
+                <StackLayout Orientation="Horizontal" Spacing="25" >
+                    <Label Text="Email"/>
+                    <Entry x:Name="email" WidthRequest="220" />
                 </StackLayout>
             </StackLayout>
             <StackLayout Padding="20" >
