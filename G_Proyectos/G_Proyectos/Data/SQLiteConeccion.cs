@@ -15,13 +15,13 @@ namespace G_Proyectos.Data
             db = new SQLiteAsyncConnection(dbpath);
             db.CreateTableAsync<Usuario>().Wait();
             db.CreateTableAsync<Paciente>().Wait();
-            db.CreateTableAsync<Monitoreo>().Wait();
+            db.CreateTableAsync<Monitoreobase>().Wait();
             db.CreateTableAsync<Medico>().Wait();
 
         }
         public Task<int> InsertarUsuario(Usuario user)
         {
-                return db.InsertAsync(user);
+            return db.InsertAsync(user);
         }
         public Task<List<Usuario>> ListaUsuarios()
         {
@@ -29,7 +29,7 @@ namespace G_Proyectos.Data
         }
         public Task<int> InsertarPaciente(Paciente pacient)
         {
-            if (pacient.Id==0)
+            if (pacient.Id == 0)
             {
                 return db.InsertAsync(pacient);
             }
@@ -37,14 +37,22 @@ namespace G_Proyectos.Data
             {
                 return null;
             }
-           
+
         }
-        public IEnumerable<Usuario> BuscarUsuario(string correo,string contra)
+        public IEnumerable<Usuario> BuscarUsuario(string correo, string contra)
         {
             var result = db.QueryAsync<Usuario>("Select * from Usuario Where CorreoU=? and Contraseña=?", correo, contra);
 
 
             return result.Result;
+        }
+        public Task<List<Monitoreobase>> ListaMonitoreos()
+        {
+            return db.Table<Monitoreobase>().ToListAsync();
+        }
+        public Task<int> InsertarMonitoreo(Monitoreobase Mon)
+        {
+            return db.InsertAsync(Mon);
         }
     }
 }
