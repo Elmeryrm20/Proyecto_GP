@@ -32,10 +32,16 @@ namespace G_Proyectos.Views
                 await App.SQLiteDB.InsertarUsuario(user);
                 await DisplayAlert("Advetencia", "Registro con exito", "OK");
                 limpiar();
+                
             }
             else
             {
                 await DisplayAlert("Advetencia", "ingrese los datos bien no seas GIL", "YA WEI");
+            }
+            var UsuarioList = await App.SQLiteDB.ListaUsuarios();
+            if (UsuarioList != null)
+            {
+                listaU.ItemsSource = UsuarioList;
             }
         }
         public bool validacion()
