@@ -18,8 +18,6 @@ namespace G_Proyectos.Views
         public GraficoCircular()
         {
             InitializeComponent();
-
-            BindingContext = new Monitoreo();
         }
 
         
