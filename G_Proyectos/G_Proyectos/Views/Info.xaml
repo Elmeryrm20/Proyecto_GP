@@ -18,7 +18,7 @@
                 </StackLayout>
                 <StackLayout Orientation="Horizontal" Spacing="50">
                     <Label Text="Fecha de Nac." />
-                    <DatePicker x:Name="fecha" WidthRequest="130" />
+                    <DatePicker x:Name="fecha_nac" WidthRequest="130" />
                 </StackLayout >
                 <StackLayout Orientation="Horizontal" Spacing="30">
                     <Label Text="N° de Celular" />
@@ -37,7 +37,7 @@
                 </StackLayout>
                 <StackLayout Orientation="Horizontal" Spacing="25" >
                     <Label Text="Email"/>
-                    <Entry x:Name="email" WidthRequest="220" />
+                    <Entry x:Name="email_medico" WidthRequest="220" />
                 </StackLayout>
             </StackLayout>
             <StackLayout Padding="20" >
