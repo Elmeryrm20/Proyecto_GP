@@ -4,26 +4,26 @@
              x:Class="G_Proyectos.Views.IniciarSesion">
     <ContentPage.Content>
 
-        <ScrollView>
+        <ScrollView Background="azure">
 
             <Grid>
                 <Grid RowSpacing="0">
                     <Grid.RowDefinitions>
                         <RowDefinition Height="*"/>
-                        <RowDefinition Height="*"/>
                         <RowDefinition Height="Auto"/>
                         <RowDefinition Height="Auto"/>
                         <RowDefinition Height="Auto"/>
                         <RowDefinition Height="Auto"/>
-                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="auto"/>
                     </Grid.RowDefinitions>
                     <!--parte-->
-                    <BoxView BackgroundColor="Blue" Grid.Row="0"/>
+                    <BoxView BackgroundColor="Azure" Grid.Row="0"/>
                     <!--parte imagen-->
-                    <BoxView BackgroundColor="Yellow" Grid.Row="1"/>
                     <!--parte label iniciar sesion -->
                     <Label Text="INICIAR SESION" Grid.Row="2"
-                           HorizontalOptions="Center"/>
+                           HorizontalOptions="Center"
+                           FontAttributes="Bold"
+                           FontSize="20"/>
                     <!--parte correo electronico -->
                     <Entry x:Name="userentry"  Grid.Row="3"
                        Keyboard="Default" 
@@ -34,7 +34,8 @@
                        IsPassword="True" 
                        Keyboard="Default" 
                        TextColor="#1187B0"
-                       Placeholder="Contraseña" />
+                       Placeholder="Contraseña" 
+                        />
                     <!--parte button iniciar sesion-->
                     <Button Text="INICIAR SESION"  Grid.Row="5"
                         Clicked="Btniniciarsesion_Clicked"
