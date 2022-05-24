@@ -16,42 +16,5 @@ namespace G_Proyectos.SQLite
         [MaxLength(100)]
         public string nota { get; set; }
 
-
-
-
-
-        
-        public ObservableCollection<Prueba_Grafica> Data { get; set; }
-        
-        public Monitoreo()
-        {
-
-            Data = new ObservableCollection<Prueba_Grafica>();
-            FillData();
-
-        }
-
-
-
-        private void FillData()
-        {
-            Prueba_Grafica obj = new Prueba_Grafica()
-            {
-                Name = "Primero",
-                Quantity = 15
-            };
-
-            Data.Add(obj);
-
-            Prueba_Grafica obj2 = new Prueba_Grafica()
-            {
-                Name = "Segundo",
-                Quantity = 8
-            };
-
-            Data.Add(obj2);
-        }
-        
-        }
     }
 }

@@ -22,7 +22,7 @@ namespace G_Proyectos.Views
 
             InitializeComponent();
 
-            BindingContext = new SQLite.Monitoreo();
+            //BindingContext = new SQLite.Monitoreo();
         }
 
         
