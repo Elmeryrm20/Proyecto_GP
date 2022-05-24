@@ -46,9 +46,13 @@ namespace G_Proyectos.Data
             var result = db.QueryAsync<Monitoreobase>("Select * from Monitoreobase Where Precion<=65 and FecRegistro<=MONTH(numero)", numero);
             return result.Result;
         }
-        public Task<int> ActualiarUsuario(Usuario date)
+        public void ActualiarUsuario(string Nombre,string Apellido,DateTime Fecha,string Telefono,string Tipo,string correo)
         {
-            return db.UpdateAsync(date);
+          db.QueryAsync<Usuario>("UPDATE Usuario SET NombreReal=?,Apellido=?,FecNacimiento=?,TelefonoP=?,TipoPersona=? Where CorreoU=? ", Nombre, Apellido, Fecha, Telefono, Tipo,correo);
+        }
+        public void ActualiarCuenta(string NombreU, string contraseña, string correo)
+        {
+            db.QueryAsync<Usuario>("UPDATE Usuario SET NombreU=? Contraseña=? Where CorreoU=? ", NombreU, contraseña, correo);
         }
         public IEnumerable<Monitoreobase> NormoGlucemia1_Normal(string Fecha)
         {
@@ -69,6 +73,10 @@ namespace G_Proyectos.Data
         {
             var result = db.QueryAsync<Monitoreobase>("Select * from Monitoreobase Where Precion>=398 and FecRegistro=?", Fecha);
             return result.Result;
+        }
+        public Task<Usuario> UsuarioLogeado(string correo)
+        {
+            return db.GetAsync<Usuario>(correo);
         }
     }
 }

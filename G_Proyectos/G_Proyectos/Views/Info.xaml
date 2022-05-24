@@ -5,16 +5,17 @@
              Title="INFO"
              Icon="perfil1.png">
     <ContentPage.Content>
+        
         <StackLayout Background="azure">
             <StackLayout Background="#FFFFFF" Margin="30" Padding="30" WidthRequest="300" >
                 <Label Text="MI INFORMACION PERSONAL" FontAttributes="Bold" HorizontalOptions="Center" />
                 <StackLayout Orientation="Horizontal" Spacing="40">
                     <Label Text="Nombres" HorizontalOptions="Start" />
-                    <Entry x:Name="nombre" WidthRequest="200" HorizontalOptions="End" />
+                    <Entry x:Name="nombre"  WidthRequest="200" HorizontalOptions="End" />
                 </StackLayout>
                 <StackLayout Orientation="Horizontal" Spacing="40">
                     <Label Text="Apellidos" />
-                    <Entry x:Name="apellido" WidthRequest="200" />
+                    <Entry x:Name="apellido" Text="{Binding Apellido}" WidthRequest="200" />
                 </StackLayout>
                 <StackLayout Orientation="Horizontal" Spacing="50">
                     <Label Text="Fecha de Nac." />

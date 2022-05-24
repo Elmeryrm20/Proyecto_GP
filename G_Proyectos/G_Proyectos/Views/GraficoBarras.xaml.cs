@@ -28,7 +28,7 @@ namespace G_Proyectos.Views
         {
             SQLite.Monitoreobase HipoGlucemia = new SQLite.Monitoreobase()
             {
-                precion = await App.SQLiteDB.Hipoglucemia();
+                //precion = await App.SQLiteDB.Hipoglucemia();
             };
         }
     }

@@ -15,25 +15,23 @@ namespace G_Proyectos.Views
         public Info()
         {
             InitializeComponent();
+            mostararU();
         }
 
         private async void actualizarinfo_Clicked(object sender, EventArgs e)
         {
             if (true)
             {
-                Usuario date = new Usuario
-                {
-                    NombreReal = nombre.Text,
-                    Apellido = apellido.Text,
-                    FecNacimiento = fecha_nac.Date,
-                    TelefonoP = celular.Text,
-                    TipoPersona = tipo_paciente.Text
 
-                 };
-                await App.SQLiteDB.ActualiarUsuario(date);
+                App.SQLiteDB.ActualiarUsuario(nombre.Text, apellido.Text, fecha_nac.Date, celular.Text, tipo_paciente.Text, "123");
                 await DisplayAlert("Advetencia", "Actualizacion con exito", "OK");
 
             }
+        }
+        public  void mostararU()
+        {
+            var datos = App.SQLiteDB.UsuarioLogeado("123");
+            apellido.Text = datos.ToString();
         }
     }
 }
