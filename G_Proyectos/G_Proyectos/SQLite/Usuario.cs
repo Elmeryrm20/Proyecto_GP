@@ -15,6 +15,21 @@ namespace G_Proyectos.SQLite
 
         [MaxLength(20)]
         public string Contraseña { get; set; }
-        
+
+        [MaxLength(20)]
+
+        public string NombreReal { get; set; }
+
+        [MaxLength(20)]
+        public string Apellido { get; set; }
+
+        [MaxLength(20)]
+        public DateTime FecNacimiento { get; set; }
+
+        [MaxLength(20)]
+        public string TelefonoP { get; set; }
+
+        [MaxLength(20)]
+        public string TipoPersona { get; set; }
     }
 }

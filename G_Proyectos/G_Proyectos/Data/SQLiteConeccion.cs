@@ -14,7 +14,6 @@ namespace G_Proyectos.Data
         {
             db = new SQLiteAsyncConnection(dbpath);
             db.CreateTableAsync<Usuario>().Wait();
-            db.CreateTableAsync<Paciente>().Wait();
             db.CreateTableAsync<Monitoreobase>().Wait();
             db.CreateTableAsync<Medico>().Wait();
 
@@ -26,18 +25,6 @@ namespace G_Proyectos.Data
         public Task<List<Usuario>> ListaUsuarios()
         {
             return db.Table<Usuario>().ToListAsync();
-        }
-        public Task<int> InsertarPaciente(Paciente pacient)
-        {
-            if (pacient.Id == 0)
-            {
-                return db.InsertAsync(pacient);
-            }
-            else
-            {
-                return null;
-            }
-
         }
         public IEnumerable<Usuario> BuscarUsuario(string correo, string contra)
         {
@@ -54,10 +41,14 @@ namespace G_Proyectos.Data
         {
             return db.InsertAsync(Mon);
         }
-        public IEnumerable<Monitoreobase> Hipoglucemia(string Fecha)
+        public IEnumerable<Monitoreobase> Hipoglucemia(string numero)
         {
-            var result = db.QueryAsync<Monitoreobase>("Select * from Monitoreobase Where Precion<=65 and FecRegistro=?", Fecha);
+            var result = db.QueryAsync<Monitoreobase>("Select * from Monitoreobase Where Precion<=65 and FecRegistro<=MONTH(numero)", numero);
             return result.Result;
+        }
+        public Task<int> ActualiarUsuario(Usuario date)
+        {
+            return db.UpdateAsync(date);
         }
         public IEnumerable<Monitoreobase> NormoGlucemia1_Normal(string Fecha)
         {
