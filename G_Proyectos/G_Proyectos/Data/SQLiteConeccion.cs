@@ -59,5 +59,25 @@ namespace G_Proyectos.Data
             var result = db.QueryAsync<Monitoreobase>("Select * from Monitoreobase Where Precion<=65 and FecRegistro=?", Fecha);
             return result.Result;
         }
+        public IEnumerable<Monitoreobase> NormoGlucemia1_Normal(string Fecha)
+        {
+            var result = db.QueryAsync<Monitoreobase>("Select * from Monitoreobase Where Precion<=132 and Precion>=66 and FecRegistro=?", Fecha);
+            return result.Result;
+        }
+        public IEnumerable<Monitoreobase> NormoGlucemia1_Bueno(string Fecha)
+        {
+            var result = db.QueryAsync<Monitoreobase>("Select * from Monitoreobase Where Precion<=197 and Precion>=133 and FecRegistro=?", Fecha);
+            return result.Result;
+        }
+        public IEnumerable<Monitoreobase> NormoGlucemia1_Malo(string Fecha)
+        {
+            var result = db.QueryAsync<Monitoreobase>("Select * from Monitoreobase Where Precion<=397 and Precion>=198 and FecRegistro=?", Fecha);
+            return result.Result;
+        }
+        public IEnumerable<Monitoreobase> HiperGlucemia(string Fecha)
+        {
+            var result = db.QueryAsync<Monitoreobase>("Select * from Monitoreobase Where Precion>=398 and FecRegistro=?", Fecha);
+            return result.Result;
+        }
     }
 }
