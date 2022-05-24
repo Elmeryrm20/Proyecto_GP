@@ -16,6 +16,7 @@ namespace G_Proyectos.Views
         public CrearCuenta()
         {
             InitializeComponent();
+            MostrarUsuario();
         }
 
         private async void Btncrearcuenta_Clicked(object sender, EventArgs e)
@@ -38,11 +39,7 @@ namespace G_Proyectos.Views
             {
                 await DisplayAlert("Advetencia", "ingrese los datos bien no seas GIL", "YA WEI");
             }
-            var UsuarioList = await App.SQLiteDB.ListaUsuarios();
-            if (UsuarioList != null)
-            {
-                listaU.ItemsSource = UsuarioList;
-            }
+          
         }
         public bool validacion()
         {
@@ -79,6 +76,14 @@ namespace G_Proyectos.Views
             correoelectronico.Text = "";
             userentry.Text = "";
             passwordentry.Text = "";
+        }
+        public async void MostrarUsuario()
+        {
+            var UsuarioList = await App.SQLiteDB.ListaUsuarios();
+            if (UsuarioList != null)
+            {
+                listaU.ItemsSource = UsuarioList;
+            }
         }
     }
 }

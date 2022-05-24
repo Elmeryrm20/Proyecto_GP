@@ -10,9 +10,9 @@ using Xamarin.Forms.Xaml;
 namespace G_Proyectos.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Monitoreo : ContentPage
+    public partial class settings : ContentPage
     {
-        public Monitoreo()
+        public settings()
         {
             InitializeComponent();
         }
