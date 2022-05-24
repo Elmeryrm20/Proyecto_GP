@@ -29,19 +29,27 @@ namespace G_Proyectos.Views
             await App.MasterD.Detail.Navigation.PushAsync(new MiInformacion());
         }
 
-        private void btnreportes_Clicked(object sender, EventArgs e)
+        private async void btnreportes_Clicked(object sender, EventArgs e)
         {
-
+            App.MasterD.IsPresented = false;
         }
 
-        private void btnacercade_Clicked(object sender, EventArgs e)
+        private async void btnacercade_Clicked(object sender, EventArgs e)
         {
-
+            App.MasterD.IsPresented = false;
+            await App.MasterD.Detail.Navigation.PushAsync(new AcercaDe());
         }
 
-        private void btncerrarsesion_Clicked(object sender, EventArgs e)
+        private async void btncerrarsesion_Clicked(object sender, EventArgs e)
         {
+            App.MasterD.IsPresented = false;
+            await App.MasterD.Detail.Navigation.PushAsync(new IniciarSesion());
+        }
 
+        private async void btnregistro_Clicked(object sender, EventArgs e)
+        {
+            App.MasterD.IsPresented = false;
+            await App.MasterD.Detail.Navigation.PushAsync(new RegistroDeControl());
         }
     }
 }
