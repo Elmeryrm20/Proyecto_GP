@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="G_Proyectos.Views.master"
+             Title="Master">
+
+    <StackLayout>
+        <Button Text="Inicio" x:Name="btninicio" Clicked="btninicio_Clicked" />
+        <Button Text="Mi Informacion" x:Name="btninformacion" Clicked="btninformacion_Clicked" />
+        <Button Text="Registro de Control"/>
+        <Button Text="Mis Reportes"/>
+        <Button Text="Acerca de"/>
+        <Button Text="Cerrar Sesión"/>
+    </StackLayout>
+    
+
+
+</ContentPage>

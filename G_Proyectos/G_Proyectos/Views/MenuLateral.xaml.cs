@@ -10,11 +10,15 @@ using Xamarin.Forms.Xaml;
 namespace G_Proyectos.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Monitoreo : ContentPage
+    public partial class MenuLateral : MasterDetailPage
     {
-        public Monitoreo()
+        public MenuLateral()
         {
             InitializeComponent();
+            this.Master = new master();
+            this.Detail = new NavigationPage(new PaginaDeInicio());
+
+            App.MasterD = this;
         }
     }
 }
