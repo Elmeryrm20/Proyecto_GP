@@ -10,9 +10,9 @@ using Xamarin.Forms.Xaml;
 namespace G_Proyectos.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Monitoreo : ContentPage
+    public partial class ULTIMA : ContentPage
     {
-        public Monitoreo()
+        public ULTIMA()
         {
             InitializeComponent();
         }

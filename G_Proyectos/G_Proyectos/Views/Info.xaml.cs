@@ -16,10 +16,5 @@ namespace G_Proyectos.Views
         {
             InitializeComponent();
         }
-
-        private void btnactualizar_Clicked(object sender, EventArgs e)
-        {
-
-        }
     }
 }
