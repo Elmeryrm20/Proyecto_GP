@@ -46,29 +46,6 @@
                         HeightRequest="50"
                         Margin="80,0" 
                         Grid.Row="5" />
-
-            <ListView x:Name="listaU" Grid.Row="6">
-                <ListView.ItemTemplate>
-                    <DataTemplate>
-                        <ViewCell>
-                            <Grid>
-                                <Grid.RowDefinitions>
-                                    <RowDefinition Height="auto"/>
-                                    <RowDefinition Height="auto"/>
-                                </Grid.RowDefinitions>
-                                <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="*"/>
-                                    <ColumnDefinition Width="*"/>
-                                    <ColumnDefinition Width="*"/>
-                                </Grid.ColumnDefinitions>
-                                <Label Text="{Binding CorreoU}" Grid.Row="0" Grid.Column="0"/>
-                                <Label Text="{Binding NombreU}" Grid.Row="0" Grid.Column="1"/>
-                                <Label Text="{Binding Contraseña}" Grid.Row="0" Grid.Column="2"/>
-                            </Grid>
-                        </ViewCell>
-                    </DataTemplate>
-                </ListView.ItemTemplate>
-            </ListView>
         </Grid>
     </ContentPage.Content>
 </ContentPage>

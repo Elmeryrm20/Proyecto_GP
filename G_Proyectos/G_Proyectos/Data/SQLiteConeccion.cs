@@ -23,10 +23,6 @@ namespace G_Proyectos.Data
         {
                 return db.InsertAsync(user);
         }
-        public Task<List<Usuario>> ListaUsuarios()
-        {
-            return db.Table<Usuario>().ToListAsync();
-        }
         public Task<int> InsertarPaciente(Paciente pacient)
         {
             if (pacient.Id==0)

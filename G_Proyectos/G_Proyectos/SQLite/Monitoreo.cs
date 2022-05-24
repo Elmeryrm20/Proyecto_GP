@@ -51,6 +51,13 @@ namespace G_Proyectos.SQLite
 
             Data.Add(obj2);
 
+            Prueba_Grafica obj3 = new Prueba_Grafica()
+            {
+                Name = "Tercero",
+                Quantity = 18
+            };
+
+            Data.Add(obj3);
         }
     }
 }
