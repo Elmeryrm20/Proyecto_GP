@@ -27,7 +27,7 @@
                 </StackLayout>
                 <StackLayout Orientation="Horizontal" Spacing="30">
                     <Label Text="Activo" FontSize="Body"/>
-                    <Switch />
+                    <Switch Toggled="Switch_Toggled"/>
                 </StackLayout>
             </StackLayout>
             

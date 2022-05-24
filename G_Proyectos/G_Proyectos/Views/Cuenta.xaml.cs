@@ -21,5 +21,10 @@ namespace G_Proyectos.Views
         {
 
         }
+
+        private void Switch_Toggled(object sender, ToggledEventArgs e)
+        {
+
+        }
     }
 }

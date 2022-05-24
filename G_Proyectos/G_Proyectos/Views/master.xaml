@@ -4,13 +4,26 @@
              x:Class="G_Proyectos.Views.master"
              Title="Master">
 
-    <StackLayout>
-        <Button Text="Inicio" x:Name="btninicio" Clicked="btninicio_Clicked" />
-        <Button Text="Mi Informacion" x:Name="btninformacion" Clicked="btninformacion_Clicked" />
-        <Button Text="Registro de Control" x:Name="btnregistro" Clicked="btnregistro_Clicked"/>
-        <Button Text="Mis Reportes" x:Name="btnreportes" Clicked="btnreportes_Clicked"/>
-        <Button Text="Acerca de" x:Name="btnacercade" Clicked="btnacercade_Clicked"/>
-        <Button Text="Cerrar Sesión" x:Name="btncerrarsesion" Clicked="btncerrarsesion_Clicked"/>
+    <StackLayout Margin="5" BackgroundColor="#75AECB" Padding="7" >
+        <StackLayout >
+            <Button Text="Inicio" x:Name="btninicio" Clicked="btninicio_Clicked" ImageSource="inicio.png" />
+        </StackLayout>
+        <StackLayout>
+            <Button Text="Mi Informacion" x:Name="btninformacion" ImageSource="miinfo.png" Clicked="btninformacion_Clicked" />
+        </StackLayout>
+        <StackLayout >
+            <Button Text="Registro de Control" x:Name="btnregistro" ImageSource="registro.png" Clicked="btnregistro_Clicked"/>
+        </StackLayout>
+        <StackLayout>
+            <Button Text="Mis Reportes" x:Name="btnreportes" ImageSource="reportes.png" Clicked="btnreportes_Clicked"/>
+        </StackLayout>
+        <StackLayout>
+            <Button Text="Acerca de" x:Name="btnacercade" ImageSource="acercade.png" Clicked="btnacercade_Clicked"/>
+        </StackLayout>
+        <StackLayout>
+            <Button Text="Cerrar Sesión" x:Name="btncerrarsesion" ImageSource="cerrar.png" Clicked="btncerrarsesion_Clicked"/>
+        </StackLayout>
+        
     </StackLayout>
     
 
