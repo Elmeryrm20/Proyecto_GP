@@ -29,7 +29,7 @@ namespace G_Proyectos.Views
                 }
                 else if (result.Count() == 1)
                 {
-                    await Navigation.PushAsync(new MenuLateral());
+                    await Navigation.PushAsync(new MenuLateral(userentry.Text));
                 }
                 else if (result.Count() >= 1)
                 {

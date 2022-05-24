@@ -12,12 +12,12 @@ namespace G_Proyectos.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class MenuLateral : MasterDetailPage
     {
-        public MenuLateral()
+        public MenuLateral(string correo)
         {
             InitializeComponent();
             this.Master = new master();
             this.Detail = new NavigationPage(new PaginaDeInicio());
-
+            
             App.MasterD = this;
         }
     }
