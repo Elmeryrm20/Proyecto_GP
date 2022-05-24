@@ -10,12 +10,11 @@ using Xamarin.Forms.Xaml;
 namespace G_Proyectos.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Detalle_mes : ContentPage
+    public partial class GraficoBarras : ContentPage
     {
-        public Detalle_mes()
+        public GraficoBarras()
         {
             InitializeComponent();
-            BindingContext = new SQLite.Monitoreobase();
         }
     }
 }

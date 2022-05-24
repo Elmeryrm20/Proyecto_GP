@@ -1,4 +1,4 @@
-﻿
+﻿using System.Collections.ObjectModel;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -20,5 +20,8 @@ namespace G_Proyectos.SQLite
 
         [MaxLength(100)]
         public string NotaMonitoreo { get; set; }
+
+
     }
+
 }
