@@ -15,7 +15,6 @@ namespace G_Proyectos.Views
         public Detalle_mes()
         {
             InitializeComponent();
-            BindingContext = new SQLite.Monitoreobase();
         }
     }
 }

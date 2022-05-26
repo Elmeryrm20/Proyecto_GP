@@ -1,4 +1,4 @@
-﻿using System.Collections.ObjectModel;
+﻿
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -13,15 +13,12 @@ namespace G_Proyectos.SQLite
         public int Id { get; set; }
 
         [MaxLength(50)]
-        public int Precion { get; set; }
+        public string Precion { get; set; }
 
         [MaxLength(50)]
         public DateTime FecRegistro { get; set; }
 
         [MaxLength(100)]
         public string NotaMonitoreo { get; set; }
-
-
     }
-
 }

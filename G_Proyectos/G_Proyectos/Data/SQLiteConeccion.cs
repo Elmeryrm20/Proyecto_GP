@@ -14,6 +14,7 @@ namespace G_Proyectos.Data
         {
             db = new SQLiteAsyncConnection(dbpath);
             db.CreateTableAsync<Usuario>().Wait();
+            db.CreateTableAsync<Paciente>().Wait();
             db.CreateTableAsync<Monitoreobase>().Wait();
             db.CreateTableAsync<Medico>().Wait();
 
@@ -25,6 +26,18 @@ namespace G_Proyectos.Data
         public Task<List<Usuario>> ListaUsuarios()
         {
             return db.Table<Usuario>().ToListAsync();
+        }
+        public Task<int> InsertarPaciente(Paciente pacient)
+        {
+            if (pacient.Id == 0)
+            {
+                return db.InsertAsync(pacient);
+            }
+            else
+            {
+                return null;
+            }
+
         }
         public IEnumerable<Usuario> BuscarUsuario(string correo, string contra)
         {
@@ -40,43 +53,6 @@ namespace G_Proyectos.Data
         public Task<int> InsertarMonitoreo(Monitoreobase Mon)
         {
             return db.InsertAsync(Mon);
-        }
-        public IEnumerable<Monitoreobase> Hipoglucemia(string numero)
-        {
-            var result = db.QueryAsync<Monitoreobase>("Select * from Monitoreobase Where Precion<=65 and FecRegistro<=MONTH(numero)", numero);
-            return result.Result;
-        }
-        public void ActualiarUsuario(string Nombre,string Apellido,DateTime Fecha,string Telefono,string Tipo,string correo)
-        {
-          db.QueryAsync<Usuario>("UPDATE Usuario SET NombreReal=?,Apellido=?,FecNacimiento=?,TelefonoP=?,TipoPersona=? Where CorreoU=? ", Nombre, Apellido, Fecha, Telefono, Tipo,correo);
-        }
-        public void ActualiarCuenta(string NombreU, string contraseña, string correo)
-        {
-            db.QueryAsync<Usuario>("UPDATE Usuario SET NombreU=? Contraseña=? Where CorreoU=? ", NombreU, contraseña, correo);
-        }
-        public IEnumerable<Monitoreobase> NormoGlucemia1_Normal(string Fecha)
-        {
-            var result = db.QueryAsync<Monitoreobase>("Select * from Monitoreobase Where Precion<=132 and Precion>=66 and FecRegistro=?", Fecha);
-            return result.Result;
-        }
-        public IEnumerable<Monitoreobase> NormoGlucemia1_Bueno(string Fecha)
-        {
-            var result = db.QueryAsync<Monitoreobase>("Select * from Monitoreobase Where Precion<=197 and Precion>=133 and FecRegistro=?", Fecha);
-            return result.Result;
-        }
-        public IEnumerable<Monitoreobase> NormoGlucemia1_Malo(string Fecha)
-        {
-            var result = db.QueryAsync<Monitoreobase>("Select * from Monitoreobase Where Precion<=397 and Precion>=198 and FecRegistro=?", Fecha);
-            return result.Result;
-        }
-        public IEnumerable<Monitoreobase> HiperGlucemia(string Fecha)
-        {
-            var result = db.QueryAsync<Monitoreobase>("Select * from Monitoreobase Where Precion>=398 and FecRegistro=?", Fecha);
-            return result.Result;
-        }
-        public Task<Usuario> UsuarioLogeado(string correo)
-        {
-            return db.GetAsync<Usuario>(correo);
         }
     }
 }

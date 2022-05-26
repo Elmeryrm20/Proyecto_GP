@@ -4,110 +4,11 @@
              x:Class="G_Proyectos.Views.Historico"
              Title="HISTORICO"
              Icon="historial.png">
-    <ScrollView>
-        <StackLayout BackgroundColor="White" Padding="20,15,20,15" >
-
-
-
-            <StackLayout Orientation="Horizontal" Padding="0,10,0,10">
-                <Image Source="datosh.png" WidthRequest="60" />
-                <StackLayout>
-                    <Label Text="ENERO" TextColor="Black" FontSize="20" />
-                    <Label Text= "Datos Historicos del mes de Enero" TextColor="Black" FontSize="15" />
-                </StackLayout>
-            </StackLayout>
-
-
-            <StackLayout Orientation="Horizontal" Padding="0,10,0,10">
-                <Image Source="datosh.png" WidthRequest="60" />
-                <StackLayout>
-                    <Label Text="FEBRERO" TextColor="Black" FontSize="20" />
-                    <Label Text= "Datos Historicos del mes de Febrero" TextColor="Black" FontSize="15" />
-                </StackLayout>
-            </StackLayout>
-
-
-            <StackLayout Orientation="Horizontal" Padding="0,10,0,10">
-                <Image Source="datosh.png" WidthRequest="60" />
-                <StackLayout>
-                    <Label Text="MARZO" TextColor="Black" FontSize="20" />
-                    <Label Text= "Datos Historicos del mes de Marzo" TextColor="Black" FontSize="15" />
-                </StackLayout>
-            </StackLayout>
-
-
-            <StackLayout Orientation="Horizontal" Padding="0,10,0,10">
-                <Image Source="datosh.png" WidthRequest="60" />
-                <StackLayout>
-                    <Label Text="ABRIL" TextColor="Black" FontSize="20" />
-                    <Label Text= "Datos Historicos del mes de Abril" TextColor="Black" FontSize="15" />
-                </StackLayout>
-            </StackLayout>
-
-
-            <StackLayout Orientation="Horizontal" Padding="0,10,0,10">
-                <Image Source="datosh.png" WidthRequest="60" />
-                <StackLayout>
-                    <Label Text="MAYO" TextColor="Black" FontSize="20" />
-                    <Label Text= "Datos Historicos del mes de Mayo" TextColor="Black" FontSize="15" />
-                </StackLayout>
-            </StackLayout>
-
-
-            <StackLayout Orientation="Horizontal" Padding="0,10,0,10">
-                <Image Source="datosh.png" WidthRequest="60" />
-                <StackLayout>
-                    <Label Text="JUNIO" TextColor="Black" FontSize="20" />
-                    <Label Text= "Datos Historicos del mes de Junio" TextColor="Black" FontSize="15" />
-                </StackLayout>
-            </StackLayout>
-
-
-            <StackLayout Orientation="Horizontal" Padding="0,10,0,10">
-                <Image Source="datosh.png" WidthRequest="60" />
-                <StackLayout>
-                    <Label Text="JULIO" TextColor="Black" FontSize="20" />
-                    <Label Text= "Datos Historicos del mes de Julio" TextColor="Black" FontSize="15" />
-                </StackLayout>
-            </StackLayout>
-
-
-            <StackLayout Orientation="Horizontal" Padding="0,10,0,10">
-                <Image Source="datosh.png" WidthRequest="60" />
-                <StackLayout>
-                    <Label Text="AGOSTO" TextColor="Black" FontSize="20" />
-                    <Label Text= "Datos Historicos del mes de Agosto" TextColor="Black" FontSize="15" />
-                </StackLayout>
-            </StackLayout>
-
-
-            <StackLayout Orientation="Horizontal" Padding="0,10,0,10">
-                <Image Source="datosh.png" WidthRequest="60" />
-                <StackLayout>
-                    <Label Text="SEPTIEMBRE" TextColor="Black" FontSize="20" />
-                    <Label Text= "Datos Historicos del mes de Septiembre" TextColor="Black" FontSize="15" />
-                </StackLayout>
-            </StackLayout>
-
-
-            <StackLayout Orientation="Horizontal" Padding="0,10,0,10">
-                <Image Source="datosh.png" WidthRequest="60" />
-                <StackLayout>
-                    <Label Text="OCTUBRE" TextColor="Black" FontSize="20" />
-                    <Label Text= "Datos Historicos del mes de Octubre" TextColor="Black" FontSize="15" />
-                </StackLayout>
-            </StackLayout>
-
-
-            <StackLayout Orientation="Horizontal" Padding="0,10,0,10">
-                <Image Source="datosh.png" WidthRequest="60" />
-                <StackLayout>
-                    <Label Text="NOVIEMBRE" TextColor="Black" FontSize="20" />
-                    <Label Text= "Datos Historicos del mes de Noviembre" TextColor="Black" FontSize="15" />
-                </StackLayout>
-            </StackLayout>
-
-
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="HISTORICO"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
         </StackLayout>
-    </ScrollView>
+    </ContentPage.Content>
 </ContentPage>

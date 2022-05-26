@@ -33,7 +33,7 @@
             
             <StackLayout Padding="20" >
                 <Button x:Name="btnactualizarcuenta" Clicked="btnactualizarcuenta_Clicked"  
-                        Text="ACTULIZAR"
+                        Text="ACTUALIZAR"
                         Background="#7DC3DB"
                         TextColor="#FFFFFF"
                         CornerRadius="20"/>
