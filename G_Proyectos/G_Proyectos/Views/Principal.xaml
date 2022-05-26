@@ -19,13 +19,13 @@
                     <RowDefinition Height="Auto"/>
                     </Grid.RowDefinitions>
                     <!--espacio-->
-                    <BoxView BackgroundColor="Yellow" Grid.Row="0"/>
+                    <BoxView BackgroundColor="Azure" Grid.Row="0"/>
                     
                     <!--espacio-->
-                    <BoxView BackgroundColor="Blue" Grid.Row="1"
+                    <BoxView BackgroundColor="Azure" Grid.Row="1"
                              HeightRequest="100"/>
                     <!--botonregistrar-->
-                    <BoxView BackgroundColor="DarkGreen" Grid.Row="3"/>
+                    <BoxView BackgroundColor="Azure" Grid.Row="3"/>
                     
                     <!--label-->
                     <Button x:Name="btniniciar"

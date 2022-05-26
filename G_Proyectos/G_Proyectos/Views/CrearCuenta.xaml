@@ -5,37 +5,43 @@
     <ContentPage.Content>
         <Grid VerticalOptions="CenterAndExpand">
             <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
                 <RowDefinition Height="Auto"/>
                 <RowDefinition Height="Auto"/>
                 <RowDefinition Height="Auto"/>
             </Grid.RowDefinitions>
-            <Label Text="Crea tu cuenta de Diabetes" 
+            
+            <BoxView BackgroundColor="Azure" Grid.Row="0" HeightRequest="222"/>
+            
+            <StackLayout Background="azure" Grid.Row="1">
+                
+                <Label Text="Crea tu cuenta de Diabetes" 
                        HorizontalOptions="Center"
                        TextColor="Black"
-                       Grid.Row="0"/>
-            <Entry x:Name="correoelectronico" 
+                       FontAttributes="Bold"
+                       FontSize="18"/>
+                <Entry x:Name="correoelectronico" 
                        Placeholder="Correo eléctronico"
                        Keyboard="Default" 
-                       TextColor="#1187B0"
-                       Grid.Row="1"/>
-            <Entry x:Name="userentry" 
+                       TextColor="#1187B0"/>
+                <Entry x:Name="userentry" 
                        Placeholder="Usuario"
                        Keyboard="Default" 
-                       TextColor="#1187B0"
-                       Grid.Row="2"/>
-            <Entry x:Name="passwordentry" 
+                       TextColor="#1187B0"/>
+                <Entry x:Name="passwordentry" 
                        Placeholder="Contraseña"
                        IsPassword="True" 
                        Keyboard="Default" 
-                       TextColor="#1187B0"
-                       Grid.Row="3"/>
-            <Entry x:Name="passworrepetdentry" 
+                       TextColor="#1187B0"/>
+                <Entry x:Name="passworrepetdentry" 
                        Placeholder="Confirmar Contraseña"
                        IsPassword="True" 
                        Keyboard="Default" 
-                       TextColor="#1187B0"
-                       Grid.Row="4"/>
-            <Button Text="CREAR CUENTA" x:Name="btncrearcuenta"
+                       TextColor="#1187B0"/>
+                <Button Text="CREAR CUENTA" x:Name="btncrearcuenta"
                         Clicked="Btncrearcuenta_Clicked"
                         TextColor="#F4F4F4"
                         BackgroundColor="#169FCF"
@@ -44,10 +50,10 @@
                         CornerRadius="25"
                         WidthRequest="150"
                         HeightRequest="50"
-                        Margin="80,0" 
-                        Grid.Row="5" />
+                        Margin="80,0" />
+            </StackLayout>
 
-            <ListView x:Name="listaU" Grid.Row="6">
+            <ListView x:Name="listaU" Grid.Row="7" Margin="10">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>

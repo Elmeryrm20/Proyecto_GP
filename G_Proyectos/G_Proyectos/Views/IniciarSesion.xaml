@@ -24,18 +24,20 @@
                            HorizontalOptions="Center"
                            FontAttributes="Bold"
                            FontSize="20"/>
+                    <StackLayout Grid.Row="4" HorizontalOptions="Center">
                     <!--parte correo electronico -->
-                    <Entry x:Name="userentry"  Grid.Row="3"
-                       Keyboard="Default" 
-                       Placeholder="Correo eléctronico"
-                       TextColor="#1187B0" />
+                        <Entry x:Name="userentry"  Grid.Row="3"
+                                Keyboard="Default" 
+                                Placeholder="Correo eléctronico"
+                                TextColor="#1187B0" 
+                               WidthRequest="300"/>
                     <!--parte contraseña-->
-                    <Entry x:Name="passwordentry" Grid.Row="4"
-                       IsPassword="True" 
-                       Keyboard="Default" 
-                       TextColor="#1187B0"
-                       Placeholder="Contraseña" 
-                        />
+                        <Entry x:Name="passwordentry" Grid.Row="4"
+                                IsPassword="True" 
+                                Keyboard="Default" 
+                                TextColor="#1187B0"
+                                Placeholder="Contraseña" />
+                    </StackLayout>
                     <!--parte button iniciar sesion-->
                     <Button Text="INICIAR SESION"  Grid.Row="5"
                         Clicked="Btniniciarsesion_Clicked"
