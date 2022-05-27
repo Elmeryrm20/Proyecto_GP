@@ -3,57 +3,59 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="G_Proyectos.Views.CrearCuenta">
     <ContentPage.Content>
-        <Grid VerticalOptions="CenterAndExpand">
-            <Grid.RowDefinitions>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="Auto"/>
-                <RowDefinition Height="Auto"/>
-                <RowDefinition Height="Auto"/>
-                <RowDefinition Height="Auto"/>
-                <RowDefinition Height="Auto"/>
-                <RowDefinition Height="Auto"/>
-            </Grid.RowDefinitions>
-            
-            <BoxView BackgroundColor="Azure" Grid.Row="0" HeightRequest="222"/>
-            
-            <StackLayout Background="azure" Grid.Row="1">
-                
+        <StackLayout VerticalOptions="CenterAndExpand" Background="#52C0D6" Spacing="0">
+
+            <BoxView BackgroundColor="#52C0D6" HeightRequest="200" />
+            <StackLayout Background="#52C0D6">
                 <Label Text="Crea tu cuenta de Diabetes" 
                        HorizontalOptions="Center"
-                       TextColor="Black"
+                       TextColor="White"
                        FontAttributes="Bold"
                        FontSize="18"/>
-                <Entry x:Name="correoelectronico" 
+            </StackLayout>
+            <StackLayout Background="#52C0D6" Padding="40" >
+                <StackLayout Background="white">
+                        <Entry x:Name="correoelectronico" 
                        Placeholder="Correo eléctronico"
                        Keyboard="Default" 
                        TextColor="#1187B0"/>
-                <Entry x:Name="userentry" 
+                </StackLayout>
+                <StackLayout Background="white">
+                      <Entry x:Name="userentry" 
                        Placeholder="Usuario"
                        Keyboard="Default" 
                        TextColor="#1187B0"/>
-                <Entry x:Name="passwordentry" 
+                </StackLayout>
+                <StackLayout Background="white">
+                        <Entry x:Name="passwordentry" 
                        Placeholder="Contraseña"
                        IsPassword="True" 
                        Keyboard="Default" 
                        TextColor="#1187B0"/>
-                <Entry x:Name="passworrepetdentry" 
-                       Placeholder="Confirmar Contraseña"
-                       IsPassword="True" 
-                       Keyboard="Default" 
-                       TextColor="#1187B0"/>
-                <Button Text="CREAR CUENTA" x:Name="btncrearcuenta"
-                        Clicked="Btncrearcuenta_Clicked"
-                        TextColor="#F4F4F4"
-                        BackgroundColor="#169FCF"
-                        BorderColor="#F4F4F4"
-                        BorderWidth="2"
-                        CornerRadius="25"
-                        WidthRequest="150"
-                        HeightRequest="50"
-                        Margin="80,0" />
+                </StackLayout>
+                <StackLayout Background="white">
+                        <Entry x:Name="passworrepetdentry" 
+                            Placeholder="Confirmar Contraseña"
+                            IsPassword="True" 
+                            Keyboard="Default" 
+                            TextColor="#1187B0"
+                            />
+                </StackLayout>
+                <StackLayout>
+                    <Button Text="CREAR CUENTA" x:Name="btncrearcuenta"
+                            Clicked="Btncrearcuenta_Clicked"
+                            TextColor="#F4F4F4"
+                            BackgroundColor="#169FCF"
+                            BorderColor="#F4F4F4"
+                            BorderWidth="2"
+                            CornerRadius="25"
+                            WidthRequest="150"
+                            HeightRequest="50"
+                            Margin="80,0" />
+                </StackLayout>
             </StackLayout>
 
-            <ListView x:Name="listaU" Grid.Row="7" Margin="10">
+            <ListView x:Name="listaU" Grid.Row="7" Margin="10" Background="#92C17F">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
@@ -75,6 +77,6 @@
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
-        </Grid>
+        </StackLayout>
     </ContentPage.Content>
 </ContentPage>
